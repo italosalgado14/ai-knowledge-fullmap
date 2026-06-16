@@ -1,0 +1,962 @@
+### DOMAIN prog — Programming Languages & Paradigms
+scope: programming paradigms; type systems; syntax & semantics; memory & resource management; core language features; metaprogramming & reflection; runtimes & execution models; language families & idioms.
+prog.imperative-programming | Imperative Programming | sub:paradigms
+prog.procedural-programming | Procedural Programming | sub:paradigms
+prog.object-oriented | Object-Oriented Programming | sub:paradigms
+prog.functional-programming | Functional Programming | sub:paradigms
+prog.declarative-programming | Declarative Programming | sub:paradigms
+prog.logic-programming | Logic Programming | sub:paradigms
+prog.reactive-programming | Reactive Programming | sub:paradigms
+prog.array-programming | Array Programming | sub:paradigms
+prog.static-vs-dynamic-typing | Static vs Dynamic Typing | sub:type-systems
+prog.strong-weak-typing | Strong vs Weak Typing | sub:type-systems
+prog.type-inference | Type Inference | sub:type-systems
+prog.algebraic-data-types | Algebraic Data Types | sub:type-systems
+prog.parametric-polymorphism | Parametric Polymorphism | sub:type-systems
+prog.subtyping-variance | Subtyping & Variance | sub:type-systems
+prog.type-classes | Type Classes & Traits | sub:type-systems
+prog.dependent-types | Dependent & Refinement Types | sub:type-systems
+prog.gradual-typing | Gradual Typing | sub:type-systems
+prog.syntax-grammar | Syntax & Grammar | sub:language-semantics
+prog.lexical-vs-dynamic-scope | Lexical vs Dynamic Scope | sub:language-semantics
+prog.evaluation-strategies | Evaluation Strategies | sub:language-semantics
+prog.operational-semantics | Operational Semantics | sub:language-semantics
+prog.denotational-semantics | Denotational Semantics | sub:language-semantics
+prog.lambda-calculus | Lambda Calculus | sub:language-semantics
+prog.binding-environments | Binding & Environments | sub:language-semantics
+prog.undefined-behavior | Undefined Behavior | sub:language-semantics
+prog.manual-memory-management | Manual Memory Management | sub:memory-model
+prog.stack-vs-heap | Stack vs Heap | sub:memory-model
+prog.garbage-collection | Garbage Collection | sub:memory-model
+prog.reference-counting | Reference Counting | sub:memory-model
+prog.ownership-borrowing | Ownership & Borrowing | sub:memory-model
+prog.raii | RAII & Deterministic Cleanup | sub:memory-model
+prog.smart-pointers | Smart Pointers | sub:memory-model
+prog.memory-safety | Memory Safety | sub:memory-model
+prog.value-vs-reference-semantics | Value vs Reference Semantics | sub:memory-model
+prog.first-class-functions | First-Class Functions | sub:lang-features
+prog.closures | Closures | sub:lang-features
+prog.pattern-matching | Pattern Matching | sub:lang-features
+prog.exception-handling | Exception Handling | sub:lang-features
+prog.iterators-generators | Iterators & Generators | sub:lang-features
+prog.coroutines | Coroutines & Async/Await | sub:lang-features
+prog.operator-overloading | Operator Overloading | sub:lang-features
+prog.immutability | Immutability & Persistent Data | sub:lang-features
+prog.macros | Macros & Code Generation | sub:metaprogramming
+prog.homoiconicity | Homoiconicity & Lisp Macros | sub:metaprogramming
+prog.reflection | Reflection | sub:metaprogramming
+prog.annotations-attributes | Annotations & Attributes | sub:metaprogramming
+prog.compile-time-metaprogramming | Compile-Time Metaprogramming | sub:metaprogramming
+prog.dsls | Domain-Specific Languages | sub:metaprogramming
+prog.aspect-oriented | Aspect-Oriented Programming | sub:metaprogramming
+prog.dynamic-eval | Dynamic Evaluation | sub:metaprogramming
+prog.compiled-vs-interpreted | Compiled vs Interpreted | sub:runtime
+prog.bytecode-vms | Bytecode Virtual Machines | sub:runtime
+prog.jit-compilation | JIT Compilation | sub:runtime
+prog.managed-runtimes | Managed Runtimes | sub:runtime
+prog.ffi-interop | Foreign Function Interface | sub:runtime
+prog.execution-models | Concurrency Execution Models | sub:runtime
+prog.abstract-machines | Abstract Machines | sub:runtime
+prog.wasm-portable-runtimes | WebAssembly & Portable Targets | sub:runtime
+prog.c-family | C-Family Languages | sub:lang-families
+prog.ml-family | ML-Family Languages | sub:lang-families
+prog.lisp-family | Lisp-Family Languages | sub:lang-families
+prog.jvm-languages | JVM Languages | sub:lang-families
+prog.scripting-languages | Dynamic Scripting Languages | sub:lang-families
+prog.systems-languages | Modern Systems Languages | sub:lang-families
+prog.idioms-style | Idioms & Conventions | sub:lang-families
+prog.imperative-procedural-edge | Imperative-Procedural Link | sub:paradigms
+prog.multiparadigm | Multiparadigm Languages | sub:paradigms
+
+### DOMAIN dsa — Data Structures & Algorithms
+scope: complexity & analysis; linear structures; trees & heaps; graphs; algorithm design techniques; sorting & searching; string algorithms; advanced & specialized algorithms.
+dsa.big-o-notation | Big-O Notation | sub:complexity
+dsa.asymptotic-bounds | Asymptotic Bounds | sub:complexity
+dsa.amortized-analysis | Amortized Analysis | sub:complexity
+dsa.recurrence-relations | Recurrence Relations | sub:complexity
+dsa.master-theorem | Master Theorem | sub:complexity
+dsa.complexity-classes | P, NP & Reductions | sub:complexity
+dsa.space-complexity | Space Complexity | sub:complexity
+dsa.dynamic-array | Dynamic Arrays | sub:linear-ds
+dsa.linked-list | Linked Lists | sub:linear-ds
+dsa.stack | Stack | sub:linear-ds
+dsa.queue | Queue | sub:linear-ds
+dsa.deque | Deque | sub:linear-ds
+dsa.hash-table | Hash Tables | sub:linear-ds
+dsa.circular-buffer | Circular Buffer | sub:linear-ds
+dsa.binary-tree | Binary Trees | sub:trees
+dsa.tree-traversal | Tree Traversal | sub:trees
+dsa.bst | Binary Search Trees | sub:trees
+dsa.balanced-bst | Balanced BSTs | sub:trees
+dsa.binary-heap | Binary Heap | sub:trees
+dsa.b-tree | B-Trees | sub:trees
+dsa.trie | Trie | sub:trees
+dsa.graph-representation | Graph Representation | sub:graphs-ds
+dsa.bfs | Breadth-First Search | sub:graphs-ds
+dsa.dfs | Depth-First Search | sub:graphs-ds
+dsa.topological-sort | Topological Sort | sub:graphs-ds
+dsa.shortest-path | Shortest Paths | sub:graphs-ds
+dsa.mst | Minimum Spanning Tree | sub:graphs-ds
+dsa.scc | Strongly Connected Components | sub:graphs-ds
+dsa.union-find | Union-Find | sub:graphs-ds
+dsa.divide-and-conquer | Divide & Conquer | sub:algo-design
+dsa.dynamic-programming | Dynamic Programming | sub:algo-design
+dsa.greedy-algorithms | Greedy Algorithms | sub:algo-design
+dsa.backtracking | Backtracking | sub:algo-design
+dsa.branch-and-bound | Branch & Bound | sub:algo-design
+dsa.two-pointers | Two Pointers & Sliding Window | sub:algo-design
+dsa.recursion | Recursion | sub:algo-design
+dsa.comparison-sorts | Comparison Sorts | sub:sorting-searching
+dsa.linear-sorts | Linear-Time Sorts | sub:sorting-searching
+dsa.sorting-lower-bound | Sorting Lower Bound | sub:sorting-searching
+dsa.binary-search | Binary Search | sub:sorting-searching
+dsa.selection-algorithms | Selection & Order Statistics | sub:sorting-searching
+dsa.stability-in-place | Stability & In-Place Sorting | sub:sorting-searching
+dsa.string-matching | String Matching | sub:strings
+dsa.kmp | KMP Algorithm | sub:strings
+dsa.rolling-hash | Rolling Hash | sub:strings
+dsa.suffix-structures | Suffix Trees & Arrays | sub:strings
+dsa.edit-distance | Edit Distance | sub:strings
+dsa.trie-strings | Aho-Corasick | sub:strings
+dsa.segment-tree | Segment Trees | sub:advanced-algo
+dsa.fenwick-tree | Fenwick Tree | sub:advanced-algo
+dsa.bloom-filter | Bloom Filter | sub:advanced-algo
+dsa.skip-list | Skip List | sub:advanced-algo
+dsa.lru-cache | LRU Cache | sub:advanced-algo
+dsa.network-flow | Network Flow | sub:advanced-algo
+
+### DOMAIN systems — Computer Architecture & Compilers
+scope: digital logic & hardware; CPU architecture; memory hierarchy; assembly & machine code; compiler front end; compiler back end; linking, loading & binaries; hardware performance.
+systems.boolean-algebra | Boolean Algebra | sub:digital-logic
+systems.logic-gates | Logic Gates | sub:digital-logic
+systems.combinational-logic | Combinational Logic | sub:digital-logic
+systems.sequential-logic | Sequential Logic | sub:digital-logic
+systems.flip-flops-latches | Flip-Flops & Latches | sub:digital-logic
+systems.karnaugh-maps | Karnaugh Maps | sub:digital-logic
+systems.number-representation | Number Representation | sub:digital-logic
+systems.von-neumann | Von Neumann Architecture | sub:cpu-arch
+systems.isa | Instruction Set Architecture | sub:cpu-arch
+systems.risc-cisc | RISC vs CISC | sub:cpu-arch
+systems.datapath-control | Datapath & Control Unit | sub:cpu-arch
+systems.pipelining | Pipelining | sub:cpu-arch
+systems.branch-prediction | Branch Prediction | sub:cpu-arch
+systems.superscalar-ooo | Superscalar & OoO Execution | sub:cpu-arch
+systems.simd-vector | SIMD & Vector Units | sub:cpu-arch
+systems.memory-hierarchy-overview | Memory Hierarchy | sub:memory-hierarchy
+systems.cache-basics | CPU Caches | sub:memory-hierarchy
+systems.cache-mapping | Cache Associativity | sub:memory-hierarchy
+systems.cache-coherence | Cache Coherence | sub:memory-hierarchy
+systems.locality | Locality of Reference | sub:memory-hierarchy
+systems.virtual-memory | Virtual Memory | sub:memory-hierarchy
+systems.tlb | TLB | sub:memory-hierarchy
+systems.machine-code | Machine Code | sub:assembly
+systems.assembly-language | Assembly Language | sub:assembly
+systems.registers-addressing | Registers & Addressing Modes | sub:assembly
+systems.calling-conventions | Calling Conventions | sub:assembly
+systems.stack-frames | Stack & Stack Frames | sub:assembly
+systems.interrupts-traps | Interrupts & Traps | sub:assembly
+systems.x86-arm-isa | x86 & ARM in Practice | sub:assembly
+systems.lexical-analysis | Lexical Analysis | sub:compilers-frontend
+systems.parsing | Parsing | sub:compilers-frontend
+systems.grammars-cfg | Context-Free Grammars | sub:compilers-frontend
+systems.ast | Abstract Syntax Trees | sub:compilers-frontend
+systems.semantic-analysis | Semantic Analysis | sub:compilers-frontend
+systems.symbol-tables | Symbol Tables & Scoping | sub:compilers-frontend
+systems.parser-tools | Parser Generators | sub:compilers-frontend
+systems.ir | Intermediate Representation | sub:compilers-backend
+systems.ssa | Static Single Assignment | sub:compilers-backend
+systems.code-optimization | Optimization Passes | sub:compilers-backend
+systems.dataflow-analysis | Dataflow Analysis | sub:compilers-backend
+systems.register-allocation | Register Allocation | sub:compilers-backend
+systems.code-generation | Code Generation | sub:compilers-backend
+systems.jit-compilation | JIT Compilation | sub:compilers-backend
+systems.object-files | Object Files | sub:linking-loading
+systems.static-linking | Static Linking | sub:linking-loading
+systems.dynamic-linking | Dynamic Linking | sub:linking-loading
+systems.symbol-resolution | Symbol Resolution | sub:linking-loading
+systems.relocation | Relocation | sub:linking-loading
+systems.loaders | Loaders & Program Startup | sub:linking-loading
+systems.executable-formats | Executable Formats | sub:linking-loading
+systems.ilp | Instruction-Level Parallelism | sub:perf-arch
+systems.memory-wall | The Memory Wall | sub:perf-arch
+systems.cache-aware-opt | Cache-Aware Optimization | sub:perf-arch
+systems.perf-counters | Hardware Performance Counters | sub:perf-arch
+systems.roofline-model | Roofline Model | sub:perf-arch
+systems.false-sharing | False Sharing | sub:perf-arch
+systems.amdahl-gustafson | Amdahl's & Gustafson's Laws | sub:perf-arch
+
+### DOMAIN os — Operating Systems & Concurrency
+scope: processes & threads; CPU scheduling; memory management; concurrency primitives; synchronization & hazards; inter-process communication; file systems & I/O; parallel & async models.
+os.process-model | Process Model | sub:processes
+os.threads | Threads | sub:processes
+os.process-lifecycle | Process Lifecycle | sub:processes
+os.fork-exec | Fork & Exec | sub:processes
+os.user-kernel-mode | User vs Kernel Mode | sub:processes
+os.system-calls | System Calls | sub:processes
+os.interrupts | Interrupts & Traps | sub:processes
+os.context-switch | Context Switch | sub:scheduling
+os.scheduler-types | Scheduler Goals & Metrics | sub:scheduling
+os.preemption | Preemptive Scheduling | sub:scheduling
+os.scheduling-algorithms | Scheduling Algorithms | sub:scheduling
+os.realtime-scheduling | Real-Time Scheduling | sub:scheduling
+os.priority-inversion | Priority Inversion | sub:scheduling
+os.multicore-scheduling | Multiprocessor Scheduling | sub:scheduling
+os.virtual-memory | Virtual Memory | sub:memory-mgmt
+os.paging | Paging | sub:memory-mgmt
+os.page-tables | Page Tables & TLB | sub:memory-mgmt
+os.demand-paging | Demand Paging | sub:memory-mgmt
+os.page-replacement | Page Replacement | sub:memory-mgmt
+os.thrashing | Thrashing & Working Set | sub:memory-mgmt
+os.allocators | Memory Allocators | sub:memory-mgmt
+os.mmap | Memory-Mapped Files | sub:memory-mgmt
+os.mutex | Mutex | sub:concurrency
+os.semaphore | Semaphore | sub:concurrency
+os.condition-variable | Condition Variables | sub:concurrency
+os.atomics | Atomic Operations | sub:concurrency
+os.spinlock | Spinlocks | sub:concurrency
+os.rwlock | Reader-Writer Locks | sub:concurrency
+os.memory-barriers | Memory Ordering & Fences | sub:concurrency
+os.race-condition | Race Conditions | sub:sync-problems
+os.critical-section | Critical Section Problem | sub:sync-problems
+os.deadlock | Deadlock | sub:sync-problems
+os.deadlock-handling | Deadlock Prevention & Avoidance | sub:sync-problems
+os.livelock-starvation | Livelock & Starvation | sub:sync-problems
+os.classic-problems | Classic Sync Problems | sub:sync-problems
+os.false-sharing | False Sharing | sub:sync-problems
+os.shared-memory | Shared Memory IPC | sub:ipc
+os.pipes | Pipes & FIFOs | sub:ipc
+os.message-queues | Message Queues | sub:ipc
+os.sockets-ipc | Unix Domain Sockets | sub:ipc
+os.signals | Signals | sub:ipc
+os.eventfd-futex | Futexes & Eventfd | sub:ipc
+os.file-abstraction | File Abstraction | sub:filesystems
+os.inodes | Inodes & Metadata | sub:filesystems
+os.vfs | Virtual File System | sub:filesystems
+os.journaling | Journaling & Crash Consistency | sub:filesystems
+os.page-cache | Page Cache & Buffering | sub:filesystems
+os.io-scheduling | Disk & I/O Scheduling | sub:filesystems
+os.concurrency-vs-parallelism | Concurrency vs Parallelism | sub:parallelism
+os.blocking-nonblocking | Blocking vs Non-Blocking I/O | sub:parallelism
+os.event-loop | Event Loop & Reactor | sub:parallelism
+os.io-multiplexing | I/O Multiplexing | sub:parallelism
+os.async-await | Async/Await & Coroutines | sub:parallelism
+os.thread-pools | Thread Pools | sub:parallelism
+os.green-threads | Green Threads & Fibers | sub:parallelism
+os.actor-model | Actor & CSP Models | sub:parallelism
+
+### DOMAIN net — Networking & Protocols
+scope: network models; link & physical layer; network layer & routing; transport layer; application protocols; HTTP & web transport; network security; network programming & tools.
+net.osi-model | OSI Model | sub:net-models
+net.tcp-ip-model | TCP/IP Model | sub:net-models
+net.encapsulation | Encapsulation & PDUs | sub:net-models
+net.protocol-layering | Layering & Abstraction | sub:net-models
+net.end-to-end-principle | End-to-End Principle | sub:net-models
+net.standards-bodies | Standards & RFCs | sub:net-models
+net.ethernet | Ethernet | sub:link-physical
+net.mac-addressing | MAC Addressing | sub:link-physical
+net.switching-bridging | Switching & Bridging | sub:link-physical
+net.vlans | VLANs & 802.1Q | sub:link-physical
+net.arp | ARP | sub:link-physical
+net.wifi | Wi-Fi (802.11) | sub:link-physical
+net.physical-media | Physical Media & Signaling | sub:link-physical
+net.ipv4 | IPv4 Addressing | sub:ip-routing
+net.ipv6 | IPv6 | sub:ip-routing
+net.subnetting-cidr | Subnetting & CIDR | sub:ip-routing
+net.ip-routing-basics | IP Routing & Forwarding | sub:ip-routing
+net.nat | NAT & PAT | sub:ip-routing
+net.routing-protocols | Routing Protocols | sub:ip-routing
+net.bgp | BGP | sub:ip-routing
+net.icmp | ICMP | sub:ip-routing
+net.tcp | TCP | sub:transport
+net.udp | UDP | sub:transport
+net.ports-sockets | Ports & Sockets | sub:transport
+net.tcp-handshake | TCP Handshake & Teardown | sub:transport
+net.flow-control | Flow Control | sub:transport
+net.congestion-control | Congestion Control | sub:transport
+net.quic | QUIC | sub:transport
+net.dns | DNS | sub:app-protocols
+net.dns-records | DNS Records & Zones | sub:app-protocols
+net.dhcp | DHCP | sub:app-protocols
+net.email-protocols | Email Protocols | sub:app-protocols
+net.file-transfer | File Transfer Protocols | sub:app-protocols
+net.realtime-protocols | Real-Time Media Protocols | sub:app-protocols
+net.websockets | WebSockets | sub:app-protocols
+net.http1 | HTTP/1.1 | sub:http-deep
+net.http-methods | HTTP Methods & Status | sub:http-deep
+net.http-headers | HTTP Headers | sub:http-deep
+net.http-caching | HTTP Caching | sub:http-deep
+net.cookies-sessions | Cookies & Sessions | sub:http-deep
+net.http2 | HTTP/2 | sub:http-deep
+net.http3 | HTTP/3 | sub:http-deep
+net.tls | TLS / SSL | sub:net-security
+net.pki-certs | PKI & Certificates | sub:net-security
+net.firewalls | Firewalls | sub:net-security
+net.vpn-tunneling | VPN & Tunneling | sub:net-security
+net.network-attacks | Network Attacks | sub:net-security
+net.dnssec-secure-dns | DNSSEC & Encrypted DNS | sub:net-security
+net.socket-programming | Socket Programming | sub:net-tools
+net.tcpdump-wireshark | Packet Capture & Analysis | sub:net-tools
+net.curl-http-clients | HTTP Clients & curl | sub:net-tools
+net.net-diagnostics | Diagnostic Tools | sub:net-tools
+net.proxies-load-balancers | Proxies & Load Balancers | sub:net-tools
+net.cdn | CDN | sub:net-tools
+
+### DOMAIN data — Databases & Data Management
+scope: relational model; SQL; transactions & concurrency; indexing & storage engines; query processing & optimization; NoSQL & alternative models; data modeling & design; data engineering & warehousing.
+data.relational-model | Relational Model | sub:relational
+data.relational-algebra | Relational Algebra | sub:relational
+data.keys-constraints | Keys & Constraints | sub:relational
+data.functional-dependencies | Functional Dependencies | sub:relational
+data.normalization | Normalization | sub:relational
+data.relational-calculus | Relational Calculus | sub:relational
+data.tuple-domain-theory | Domains & NULL Semantics | sub:relational
+data.sql-ddl | DDL | sub:sql
+data.sql-dml | DML & SELECT | sub:sql
+data.sql-joins | Joins | sub:sql
+data.sql-aggregation | Aggregation & Grouping | sub:sql
+data.sql-subqueries | Subqueries & CTEs | sub:sql
+data.window-functions | Window Functions | sub:sql
+data.recursive-queries | Recursive Queries | sub:sql
+data.acid | ACID Properties | sub:transactions
+data.transaction-isolation | Isolation Levels | sub:transactions
+data.concurrency-anomalies | Concurrency Anomalies | sub:transactions
+data.locking | Locking & 2PL | sub:transactions
+data.mvcc | MVCC | sub:transactions
+data.deadlock-handling | Deadlock Detection | sub:transactions
+data.write-ahead-log | Write-Ahead Logging | sub:transactions
+data.serializability | Serializability Theory | sub:transactions
+data.btree-index | B-Tree Indexes | sub:indexing-storage
+data.lsm-tree | LSM Trees | sub:indexing-storage
+data.hash-index | Hash Indexes | sub:indexing-storage
+data.page-storage | Page & Buffer Management | sub:indexing-storage
+data.row-vs-column | Row vs Columnar Storage | sub:indexing-storage
+data.secondary-indexes | Secondary & Covering Indexes | sub:indexing-storage
+data.specialized-indexes | Specialized Indexes | sub:indexing-storage
+data.query-planner | Query Planner | sub:query-optimization
+data.cost-based-optimization | Cost-Based Optimization | sub:query-optimization
+data.cardinality-estimation | Cardinality Estimation | sub:query-optimization
+data.join-algorithms | Join Algorithms | sub:query-optimization
+data.join-ordering | Join Ordering | sub:query-optimization
+data.query-execution | Execution Engines | sub:query-optimization
+data.statistics-explain | Statistics & EXPLAIN | sub:query-optimization
+data.cap-theorem | CAP & Tradeoffs | sub:nosql
+data.key-value-stores | Key-Value Stores | sub:nosql
+data.document-stores | Document Databases | sub:nosql
+data.wide-column-stores | Wide-Column Stores | sub:nosql
+data.graph-databases | Graph Databases | sub:nosql
+data.time-series-db | Time-Series & Specialized DBs | sub:nosql
+data.eventual-consistency | Eventual Consistency | sub:nosql
+data.er-modeling | Entity-Relationship Modeling | sub:data-modeling
+data.schema-design | Schema Design | sub:data-modeling
+data.denormalization | Denormalization | sub:data-modeling
+data.dimensional-modeling | Dimensional Modeling | sub:data-modeling
+data.schema-migration | Schema Migration & Evolution | sub:data-modeling
+data.data-types-modeling | Data Type & Key Selection | sub:data-modeling
+data.polyglot-persistence | Polyglot Persistence | sub:data-modeling
+data.etl-elt | ETL & ELT | sub:data-pipelines
+data.data-warehouse | Data Warehouse | sub:data-pipelines
+data.data-lake | Data Lake & Lakehouse | sub:data-pipelines
+data.olap-cubes | OLAP & Analytics | sub:data-pipelines
+data.batch-stream-processing | Batch vs Stream Processing | sub:data-pipelines
+data.cdc | Change Data Capture | sub:data-pipelines
+data.data-quality-governance | Data Quality & Governance | sub:data-pipelines
+data.partitioning-sharding | Partitioning & Sharding | sub:data-pipelines
+
+### DOMAIN distributed — Distributed Systems
+scope: fundamentals (failure, time, CAP); consistency models; consensus & coordination; replication & partitioning; messaging & streaming; distributed data; fault tolerance & resilience; distributed patterns.
+distributed.eight-fallacies | Fallacies of Distributed Computing | sub:dist-fundamentals
+distributed.partial-failure | Partial Failure | sub:dist-fundamentals
+distributed.failure-models | Failure Models | sub:dist-fundamentals
+distributed.cap-theorem | CAP Theorem | sub:dist-fundamentals
+distributed.pacelc | PACELC Theorem | sub:dist-fundamentals
+distributed.flp-impossibility | FLP Impossibility | sub:dist-fundamentals
+distributed.time-clocks | Clocks & Time | sub:dist-fundamentals
+distributed.happens-before | Happens-Before Relation | sub:consistency
+distributed.logical-clocks | Logical & Vector Clocks | sub:consistency
+distributed.linearizability | Linearizability | sub:consistency
+distributed.sequential-consistency | Sequential Consistency | sub:consistency
+distributed.causal-consistency | Causal Consistency | sub:consistency
+distributed.eventual-consistency | Eventual Consistency | sub:consistency
+distributed.session-guarantees | Session Guarantees | sub:consistency
+distributed.consensus-problem | The Consensus Problem | sub:consensus
+distributed.quorum | Quorums | sub:consensus
+distributed.paxos | Paxos | sub:consensus
+distributed.raft | Raft | sub:consensus
+distributed.leader-election | Leader Election | sub:consensus
+distributed.byzantine-ft | Byzantine Fault Tolerance | sub:consensus
+distributed.coordination-service | Coordination Services | sub:consensus
+distributed.replication-basics | Replication Fundamentals | sub:replication
+distributed.leader-follower | Leader-Follower Replication | sub:replication
+distributed.multi-leader | Multi-Leader Replication | sub:replication
+distributed.leaderless-replication | Leaderless Replication | sub:replication
+distributed.sync-async-replication | Sync vs Async Replication | sub:replication
+distributed.partitioning | Partitioning & Sharding | sub:replication
+distributed.consistent-hashing | Consistent Hashing | sub:replication
+distributed.message-queue | Message Queues | sub:messaging
+distributed.pub-sub | Publish-Subscribe | sub:messaging
+distributed.delivery-semantics | Delivery Semantics | sub:messaging
+distributed.event-log | Log-Based Streaming | sub:messaging
+distributed.stream-processing | Stream Processing | sub:messaging
+distributed.backpressure | Backpressure & Flow Control | sub:messaging
+distributed.message-ordering | Message Ordering | sub:messaging
+distributed.distributed-transactions | Distributed Transactions | sub:dist-data
+distributed.two-phase-commit | Two-Phase Commit | sub:dist-data
+distributed.saga | Saga Pattern | sub:dist-data
+distributed.crdt | CRDTs | sub:dist-data
+distributed.conflict-resolution | Conflict Resolution | sub:dist-data
+distributed.read-repair-aae | Anti-Entropy & Read Repair | sub:dist-data
+distributed.fault-tolerance-basics | Fault Tolerance Basics | sub:fault-tolerance
+distributed.redundancy | Redundancy | sub:fault-tolerance
+distributed.failure-detection | Failure Detection | sub:fault-tolerance
+distributed.timeout-retry | Timeouts & Retries | sub:fault-tolerance
+distributed.idempotency | Idempotency | sub:fault-tolerance
+distributed.circuit-breaker | Circuit Breaker | sub:fault-tolerance
+distributed.cascading-failure | Cascading Failures | sub:fault-tolerance
+distributed.load-balancing | Load Balancing | sub:dist-patterns
+distributed.service-discovery | Service Discovery | sub:dist-patterns
+distributed.rate-limiting | Rate Limiting & Throttling | sub:dist-patterns
+distributed.bulkhead | Bulkhead Isolation | sub:dist-patterns
+distributed.leader-lease | Leader Lease & Fencing | sub:dist-patterns
+distributed.outbox-pattern | Transactional Outbox | sub:dist-patterns
+distributed.sidecar | Sidecar & Service Mesh | sub:dist-patterns
+
+### DOMAIN arch — Software Design & Architecture
+scope: design principles; design patterns; architectural styles; domain-driven design; API & interface design; modularity & components; quality attributes; refactoring & evolution.
+arch.solid | SOLID Principles | sub:design-principles
+arch.dry | DRY | sub:design-principles
+arch.kiss-yagni | KISS & YAGNI | sub:design-principles
+arch.separation-of-concerns | Separation of Concerns | sub:design-principles
+arch.coupling-cohesion | Coupling & Cohesion | sub:design-principles
+arch.composition-over-inheritance | Composition Over Inheritance | sub:design-principles
+arch.information-hiding | Information Hiding | sub:design-principles
+arch.gof-patterns | GoF Pattern Catalog | sub:design-patterns
+arch.creational-patterns | Creational Patterns | sub:design-patterns
+arch.structural-patterns | Structural Patterns | sub:design-patterns
+arch.behavioral-patterns | Behavioral Patterns | sub:design-patterns
+arch.dependency-injection | Dependency Injection | sub:design-patterns
+arch.inversion-of-control | Inversion of Control | sub:design-patterns
+arch.repository-pattern | Repository Pattern | sub:design-patterns
+arch.anti-patterns | Anti-Patterns | sub:design-patterns
+arch.layered-architecture | Layered Architecture | sub:arch-styles
+arch.hexagonal-architecture | Hexagonal Architecture | sub:arch-styles
+arch.clean-architecture | Clean Architecture | sub:arch-styles
+arch.event-driven-arch | Event-Driven Architecture | sub:arch-styles
+arch.monolith-vs-distributed | Monolith vs Distributed | sub:arch-styles
+arch.cqrs-eventsourcing | CQRS & Event Sourcing | sub:arch-styles
+arch.microkernel | Microkernel & Plugins | sub:arch-styles
+arch.ubiquitous-language | Ubiquitous Language | sub:ddd
+arch.bounded-context | Bounded Context | sub:ddd
+arch.aggregates | Aggregates & Roots | sub:ddd
+arch.entities-value-objects | Entities & Value Objects | sub:ddd
+arch.domain-services | Domain Services & Events | sub:ddd
+arch.context-mapping | Context Mapping | sub:ddd
+arch.strategic-design | Strategic Design | sub:ddd
+arch.api-contract | API Contracts | sub:api-design
+arch.rest-design | Resource-Oriented Design | sub:api-design
+arch.api-versioning | API Versioning | sub:api-design
+arch.backward-compatibility | Backward Compatibility | sub:api-design
+arch.idempotency | Idempotency & Safety | sub:api-design
+arch.interface-design | Interface Design | sub:api-design
+arch.error-design | Error & Pagination Design | sub:api-design
+arch.modularization | Modularization | sub:modularity
+arch.encapsulation | Encapsulation | sub:modularity
+arch.dependency-management | Dependency Management | sub:modularity
+arch.acyclic-dependencies | Acyclic Dependencies | sub:modularity
+arch.component-cohesion | Component Cohesion | sub:modularity
+arch.package-structure | Package & Module Boundaries | sub:modularity
+arch.plugin-extensibility | Extensibility Points | sub:modularity
+arch.quality-attributes | Quality Attributes | sub:arch-quality
+arch.maintainability | Maintainability | sub:arch-quality
+arch.scalability-design | Scalability | sub:arch-quality
+arch.testability | Testability | sub:arch-quality
+arch.tradeoff-analysis | Architectural Trade-offs | sub:arch-quality
+arch.conways-law | Conway's Law | sub:arch-quality
+arch.refactoring-basics | Refactoring | sub:refactoring
+arch.code-smells | Code Smells | sub:refactoring
+arch.technical-debt | Technical Debt | sub:refactoring
+arch.strangler-fig | Strangler Fig Pattern | sub:refactoring
+arch.legacy-modernization | Legacy Modernization | sub:refactoring
+arch.architecture-evolution | Evolutionary Architecture | sub:refactoring
+
+### DOMAIN web — Web & Frontend Engineering
+scope: web fundamentals; HTML & CSS; JavaScript & the platform; component frameworks; state & data management; rendering & delivery; performance & accessibility; modern web platform.
+web.uri-url | URLs & URIs | sub:web-fundamentals
+web.http-request-response | HTTP Request/Response | sub:web-fundamentals
+web.dns-resolution | DNS Resolution | sub:web-fundamentals
+web.browser-rendering-pipeline | Browser Rendering Pipeline | sub:web-fundamentals
+web.same-origin-policy | Same-Origin Policy | sub:web-fundamentals
+web.cookies-sessions | Cookies & Sessions | sub:web-fundamentals
+web.web-standards-bodies | Web Standards & Specs | sub:web-fundamentals
+web.semantic-html | Semantic HTML | sub:html-css
+web.css-box-model | CSS Box Model | sub:html-css
+web.css-cascade-specificity | Cascade & Specificity | sub:html-css
+web.flexbox-grid | Flexbox & Grid | sub:html-css
+web.responsive-design | Responsive Design | sub:html-css
+web.css-architecture | CSS Architecture | sub:html-css
+web.css-animations-transforms | Animations & Transforms | sub:html-css
+web.js-language-core | JavaScript Core | sub:js-frontend
+web.dom-api | DOM API | sub:js-frontend
+web.event-model | Event Model | sub:js-frontend
+web.event-loop-async | Event Loop & Async | sub:js-frontend
+web.fetch-ajax | Fetch & XHR | sub:js-frontend
+web.es-modules | ES Modules | sub:js-frontend
+web.typescript | TypeScript | sub:js-frontend
+web.component-model | Component Model | sub:frontend-frameworks
+web.declarative-rendering | Declarative UI | sub:frontend-frameworks
+web.virtual-dom-reconciliation | Virtual DOM & Diffing | sub:frontend-frameworks
+web.reactivity-systems | Reactivity & Signals | sub:frontend-frameworks
+web.component-lifecycle-hooks | Lifecycle & Hooks | sub:frontend-frameworks
+web.frontend-routing | Client-Side Routing | sub:frontend-frameworks
+web.web-components | Web Components | sub:frontend-frameworks
+web.local-component-state | Local Component State | sub:state-data
+web.global-state-management | Global State Stores | sub:state-data
+web.unidirectional-data-flow | Unidirectional Data Flow | sub:state-data
+web.server-state-caching | Server State & Caching | sub:state-data
+web.derived-state-memoization | Derived State & Memoization | sub:state-data
+web.forms-validation | Forms & Validation | sub:state-data
+web.optimistic-updates | Optimistic Updates | sub:state-data
+web.client-side-rendering | Client-Side Rendering | sub:rendering-strategies
+web.server-side-rendering | Server-Side Rendering | sub:rendering-strategies
+web.static-site-generation | Static Generation | sub:rendering-strategies
+web.hydration | Hydration | sub:rendering-strategies
+web.streaming-ssr | Streaming & Partial Render | sub:rendering-strategies
+web.server-components | Server Components | sub:rendering-strategies
+web.edge-cdn-delivery | Edge & CDN Delivery | sub:rendering-strategies
+web.core-web-vitals | Core Web Vitals | sub:web-perf-a11y
+web.critical-rendering-path | Critical Rendering Path | sub:web-perf-a11y
+web.code-splitting-lazy-loading | Code Splitting & Lazy Loading | sub:web-perf-a11y
+web.asset-optimization | Asset Optimization | sub:web-perf-a11y
+web.aria-accessibility | ARIA & Accessibility | sub:web-perf-a11y
+web.perf-budgets-monitoring | Perf Budgets & RUM | sub:web-perf-a11y
+web.web-storage-apis | Web Storage & IndexedDB | sub:web-platform
+web.service-workers-pwa | Service Workers & PWA | sub:web-platform
+web.web-workers | Web Workers | sub:web-platform
+web.websockets-realtime | WebSockets & Realtime | sub:web-platform
+web.cors | CORS | sub:web-platform
+web.webassembly | WebAssembly | sub:web-platform
+web.web-media-graphics | Canvas, WebGL & WebGPU | sub:web-platform
+
+### DOMAIN backend — Backend & API Engineering
+scope: server architecture; REST & HTTP APIs; RPC & GraphQL; authentication & authorization; caching & performance; async & background work; microservices & integration; backend data access.
+backend.request-lifecycle | Request Lifecycle | sub:server-arch
+backend.threading-models | Threading vs Event Loop | sub:server-arch
+backend.app-server | App Servers & Gateways | sub:server-arch
+backend.middleware-pipeline | Middleware Pipeline | sub:server-arch
+backend.routing | Routing & Dispatch | sub:server-arch
+backend.config-injection | Config & Dependency Injection | sub:server-arch
+backend.rest-constraints | REST Constraints | sub:rest-apis
+backend.resource-modeling | Resource Modeling | sub:rest-apis
+backend.http-methods-status | Methods & Status Codes | sub:rest-apis
+backend.pagination-filtering | Pagination & Filtering | sub:rest-apis
+backend.api-versioning | API Versioning | sub:rest-apis
+backend.openapi | OpenAPI & Schemas | sub:rest-apis
+backend.idempotency-keys | Idempotency Keys | sub:rest-apis
+backend.rpc-model | RPC Fundamentals | sub:rpc-graphql
+backend.grpc | gRPC & Protobuf | sub:rpc-graphql
+backend.graphql-schema | GraphQL Schema | sub:rpc-graphql
+backend.graphql-resolvers | Resolvers & N+1 | sub:rpc-graphql
+backend.schema-federation | Schema Federation | sub:rpc-graphql
+backend.idl-codegen | IDL & Code Generation | sub:rpc-graphql
+backend.api-style-tradeoffs | REST vs RPC vs GraphQL | sub:rpc-graphql
+backend.authn-vs-authz | AuthN vs AuthZ | sub:auth
+backend.sessions-cookies | Sessions & Cookies | sub:auth
+backend.jwt | Tokens & JWT | sub:auth
+backend.oauth-oidc | OAuth2 & OIDC | sub:auth
+backend.access-control-models | RBAC & ABAC | sub:auth
+backend.api-keys-mtls | API Keys & mTLS | sub:auth
+backend.secrets-rotation | Secrets & Key Rotation | sub:auth
+backend.cache-layers | Cache Layers | sub:caching-be
+backend.cache-strategies | Caching Strategies | sub:caching-be
+backend.cache-invalidation | Cache Invalidation | sub:caching-be
+backend.distributed-cache | Distributed Caches | sub:caching-be
+backend.http-caching-be | HTTP Cache Semantics | sub:caching-be
+backend.connection-pooling | Connection Pooling | sub:caching-be
+backend.rate-limiting | Rate Limiting & Throttling | sub:caching-be
+backend.message-queues | Message Queues | sub:async-be
+backend.task-workers | Task Queues & Workers | sub:async-be
+backend.pubsub-events | Pub/Sub & Events | sub:async-be
+backend.delivery-guarantees | Delivery Guarantees | sub:async-be
+backend.scheduled-jobs | Scheduled & Cron Jobs | sub:async-be
+backend.dlq-retry | Retries & Dead Letters | sub:async-be
+backend.webhooks | Webhooks & Callbacks | sub:async-be
+backend.service-boundaries | Service Boundaries | sub:microservices
+backend.service-discovery | Service Discovery | sub:microservices
+backend.api-gateway | API Gateway | sub:microservices
+backend.service-mesh | Service Mesh | sub:microservices
+backend.inter-service-comm | Inter-Service Comms | sub:microservices
+backend.resilience-patterns | Circuit Breakers | sub:microservices
+backend.distributed-tx | Sagas & Distributed Tx | sub:microservices
+backend.orm-mapping | ORMs & Data Mapping | sub:backend-data
+backend.repository-pattern | Repository & DAO | sub:backend-data
+backend.query-builders | Query Builders & Raw SQL | sub:backend-data
+backend.migrations | Schema Migrations | sub:backend-data
+backend.tx-management | Transaction Management | sub:backend-data
+backend.n1-data-perf | N+1 & Eager Loading | sub:backend-data
+backend.data-access-pitfalls | Pooling & SQL Injection | sub:backend-data
+
+### DOMAIN devops — DevOps, CI/CD & Infrastructure
+scope: CI/CD pipelines; build systems & dependency management; containers & images; container orchestration; infrastructure as code; configuration & secrets; deployment strategies; release & artifact management.
+devops.pipeline-as-code | Pipeline as Code | sub:cicd
+devops.ci-fundamentals | Continuous Integration | sub:cicd
+devops.cd-fundamentals | Continuous Delivery | sub:cicd
+devops.pipeline-stages | Stages & Gates | sub:cicd
+devops.build-agents | Runners & Agents | sub:cicd
+devops.pipeline-triggers | Triggers & Webhooks | sub:cicd
+devops.matrix-builds | Matrix & Parallel Builds | sub:cicd
+devops.build-graph | Build Dependency Graph | sub:build-systems
+devops.incremental-builds | Incremental & Cached Builds | sub:build-systems
+devops.dependency-resolution | Dependency Resolution | sub:build-systems
+devops.lockfiles | Lockfiles & Pinning | sub:build-systems
+devops.semver | Semantic Versioning | sub:build-systems
+devops.hermetic-builds | Hermetic Builds | sub:build-systems
+devops.monorepo-build | Monorepo Build Tooling | sub:build-systems
+devops.container-fundamentals | Container Fundamentals | sub:containers
+devops.oci-image | OCI Image Format | sub:containers
+devops.dockerfile | Image Build Files | sub:containers
+devops.layer-caching | Layer Caching & Optimization | sub:containers
+devops.multistage-build | Multi-Stage Builds | sub:containers
+devops.image-registry | Image Registries | sub:containers
+devops.container-runtime | Container Runtimes | sub:containers
+devops.image-security | Image Scanning & Hardening | sub:containers
+devops.orchestration-fundamentals | Orchestration Fundamentals | sub:orchestration
+devops.k8s-architecture | Kubernetes Architecture | sub:orchestration
+devops.k8s-workloads | Pods & Workload Controllers | sub:orchestration
+devops.k8s-networking | Service & Ingress Networking | sub:orchestration
+devops.k8s-scheduling | Scheduling & Affinity | sub:orchestration
+devops.k8s-autoscaling | Autoscaling | sub:orchestration
+devops.k8s-operators | Operators & CRDs | sub:orchestration
+devops.service-mesh | Service Mesh | sub:orchestration
+devops.iac-fundamentals | IaC Fundamentals | sub:iac
+devops.declarative-iac | Declarative vs Imperative | sub:iac
+devops.iac-state | State Management | sub:iac
+devops.iac-plan-apply | Plan & Apply Workflow | sub:iac
+devops.iac-modules | Modules & Reuse | sub:iac
+devops.iac-drift | Drift Detection | sub:iac
+devops.immutable-infra | Immutable Infrastructure | sub:iac
+devops.config-externalization | Config Externalization | sub:config-mgmt
+devops.secrets-management | Secrets Management | sub:config-mgmt
+devops.secret-rotation | Secret Rotation & Leasing | sub:config-mgmt
+devops.config-mgmt-tools | Configuration Management Tools | sub:config-mgmt
+devops.feature-flags | Feature Flags | sub:config-mgmt
+devops.env-promotion | Environment Promotion | sub:config-mgmt
+devops.secret-injection | Runtime Secret Injection | sub:config-mgmt
+devops.deploy-fundamentals | Deployment Fundamentals | sub:deployment
+devops.blue-green | Blue-Green Deployment | sub:deployment
+devops.canary-deploy | Canary Releases | sub:deployment
+devops.rolling-deploy | Rolling Deployment | sub:deployment
+devops.progressive-delivery | Progressive Delivery | sub:deployment
+devops.rollback | Rollback & Recovery | sub:deployment
+devops.gitops | GitOps | sub:deployment
+devops.zero-downtime | Zero-Downtime Deploys | sub:deployment
+devops.artifact-repository | Artifact Repositories | sub:release
+devops.versioning-strategy | Release Versioning | sub:release
+devops.artifact-promotion | Artifact Promotion | sub:release
+devops.sbom-provenance | SBOM & Provenance | sub:release
+devops.artifact-signing | Artifact Signing | sub:release
+devops.release-automation | Release Automation | sub:release
+devops.supply-chain-security | Supply Chain Security | sub:release
+
+### DOMAIN cloud — Cloud & Platform Engineering
+scope: cloud service models; compute; cloud storage; cloud networking; serverless & event-driven; site reliability engineering; reliability & resilience; cost & governance.
+cloud.iaas-paas-saas | IaaS, PaaS & SaaS | sub:cloud-models
+cloud.shared-responsibility | Shared Responsibility Model | sub:cloud-models
+cloud.deployment-models | Public, Private & Hybrid | sub:cloud-models
+cloud.multi-cloud | Multi-Cloud Strategy | sub:cloud-models
+cloud.regions-az | Regions & Availability Zones | sub:cloud-models
+cloud.cloud-native | Cloud-Native Principles | sub:cloud-models
+cloud.well-architected | Well-Architected Framework | sub:cloud-models
+cloud.virtual-machines | Virtual Machines | sub:cloud-compute
+cloud.instance-types | Instance Families & Sizing | sub:cloud-compute
+cloud.autoscaling | Autoscaling | sub:cloud-compute
+cloud.spot-instances | Spot & Preemptible | sub:cloud-compute
+cloud.managed-kubernetes | Managed Kubernetes | sub:cloud-compute
+cloud.container-runtimes-cloud | Managed Container Services | sub:cloud-compute
+cloud.gpu-compute | GPU & Accelerated Compute | sub:cloud-compute
+cloud.object-storage | Object Storage | sub:cloud-storage
+cloud.block-storage | Block Storage | sub:cloud-storage
+cloud.file-storage | Managed File Storage | sub:cloud-storage
+cloud.storage-tiers | Storage Tiers & Lifecycle | sub:cloud-storage
+cloud.storage-durability | Durability & Replication | sub:cloud-storage
+cloud.managed-databases | Managed Databases | sub:cloud-storage
+cloud.cdn | Content Delivery Networks | sub:cloud-storage
+cloud.vpc | Virtual Private Cloud | sub:cloud-networking
+cloud.subnets-routing | Subnets & Routing | sub:cloud-networking
+cloud.security-groups | Security Groups & NACLs | sub:cloud-networking
+cloud.load-balancers | Cloud Load Balancers | sub:cloud-networking
+cloud.dns-cloud | Managed DNS | sub:cloud-networking
+cloud.private-connectivity | Private & Hybrid Connectivity | sub:cloud-networking
+cloud.api-gateway | API Gateway | sub:cloud-networking
+cloud.service-mesh-cloud | Service Mesh | sub:cloud-networking
+cloud.faas | Functions as a Service | sub:serverless
+cloud.cold-start | Cold Starts | sub:serverless
+cloud.event-driven-arch | Event-Driven Architecture | sub:serverless
+cloud.message-queues-cloud | Managed Queues & Streams | sub:serverless
+cloud.serverless-orchestration | Workflow Orchestration | sub:serverless
+cloud.edge-compute | Edge Computing | sub:serverless
+cloud.backend-as-service | Backend as a Service | sub:serverless
+cloud.sli-slo-sla | SLIs, SLOs & SLAs | sub:sre
+cloud.error-budgets | Error Budgets | sub:sre
+cloud.toil-reduction | Toil & Automation | sub:sre
+cloud.observability-cloud | Observability Pillars | sub:sre
+cloud.oncall | On-Call & Incident Response | sub:sre
+cloud.postmortems | Blameless Postmortems | sub:sre
+cloud.capacity-planning | Capacity Planning | sub:sre
+cloud.redundancy-failover | Redundancy & Failover | sub:reliability
+cloud.high-availability | High Availability | sub:reliability
+cloud.disaster-recovery | Disaster Recovery | sub:reliability
+cloud.fault-isolation | Fault Isolation & Bulkheads | sub:reliability
+cloud.graceful-degradation | Graceful Degradation | sub:reliability
+cloud.chaos-engineering | Chaos Engineering | sub:reliability
+cloud.backup-restore | Backup & Restore | sub:reliability
+cloud.pricing-models | Cloud Pricing Models | sub:cloud-cost
+cloud.finops | FinOps | sub:cloud-cost
+cloud.cost-optimization | Cost Optimization | sub:cloud-cost
+cloud.tagging-allocation | Tagging & Cost Allocation | sub:cloud-cost
+cloud.cloud-governance | Cloud Governance | sub:cloud-cost
+cloud.cloud-iam | Cloud IAM | sub:cloud-cost
+cloud.compliance-cloud | Compliance & Data Residency | sub:cloud-cost
+
+### DOMAIN security — Security Engineering
+scope: security fundamentals; cryptography; application security; identity & access; network & infra security; secure development; security operations; data protection & privacy.
+security.cia-triad | CIA Triad | sub:sec-fundamentals
+security.threat-modeling | Threat Modeling | sub:sec-fundamentals
+security.attack-surface | Attack Surface | sub:sec-fundamentals
+security.defense-in-depth | Defense in Depth | sub:sec-fundamentals
+security.least-privilege | Least Privilege | sub:sec-fundamentals
+security.risk-management | Risk Management | sub:sec-fundamentals
+security.zero-trust | Zero Trust | sub:sec-fundamentals
+security.symmetric-crypto | Symmetric Encryption | sub:cryptography
+security.asymmetric-crypto | Public-Key Cryptography | sub:cryptography
+security.hashing | Cryptographic Hashing | sub:cryptography
+security.digital-signatures | Digital Signatures | sub:cryptography
+security.key-exchange | Key Exchange | sub:cryptography
+security.pki | PKI & Certificates | sub:cryptography
+security.password-hashing | Password Hashing | sub:cryptography
+security.crypto-pitfalls | Crypto Pitfalls | sub:cryptography
+security.owasp-top10 | OWASP Top 10 | sub:appsec
+security.injection | Injection Attacks | sub:appsec
+security.xss | Cross-Site Scripting | sub:appsec
+security.csrf | CSRF | sub:appsec
+security.ssrf | SSRF | sub:appsec
+security.deserialization | Insecure Deserialization | sub:appsec
+security.access-control-flaws | Broken Access Control | sub:appsec
+security.authentication | Authentication | sub:authn-authz
+security.authorization | Authorization | sub:authn-authz
+security.mfa | Multi-Factor Auth | sub:authn-authz
+security.oauth-oidc | OAuth 2.0 & OIDC | sub:authn-authz
+security.session-mgmt | Session Management | sub:authn-authz
+security.rbac-abac | RBAC & ABAC | sub:authn-authz
+security.federation-sso | Federation & SSO | sub:authn-authz
+security.firewalls | Firewalls | sub:network-sec
+security.tls | TLS | sub:network-sec
+security.network-segmentation | Network Segmentation | sub:network-sec
+security.ids-ips | IDS / IPS | sub:network-sec
+security.ddos-defense | DDoS Defense | sub:network-sec
+security.vpn | VPN & Tunneling | sub:network-sec
+security.cloud-network-sec | Cloud Network Security | sub:network-sec
+security.sdl | Secure SDLC | sub:secure-coding
+security.input-validation | Input Validation | sub:secure-coding
+security.secrets-mgmt | Secrets Management | sub:secure-coding
+security.dependency-security | Dependency Security | sub:secure-coding
+security.sast-dast | SAST & DAST | sub:secure-coding
+security.secure-defaults | Secure Defaults | sub:secure-coding
+security.supply-chain | Software Supply Chain | sub:secure-coding
+security.siem | SIEM & Log Analysis | sub:sec-ops
+security.incident-response | Incident Response | sub:sec-ops
+security.vuln-management | Vulnerability Management | sub:sec-ops
+security.pentesting | Penetration Testing | sub:sec-ops
+security.threat-intel | Threat Intelligence | sub:sec-ops
+security.security-monitoring | Security Monitoring | sub:sec-ops
+security.forensics | Digital Forensics | sub:sec-ops
+security.encryption-at-rest | Encryption at Rest | sub:data-protection
+security.data-classification | Data Classification | sub:data-protection
+security.privacy-regulations | Privacy Regulations | sub:data-protection
+security.data-masking | Masking & Tokenization | sub:data-protection
+security.dlp | Data Loss Prevention | sub:data-protection
+security.anonymization | Anonymization | sub:data-protection
+security.key-management | Key Management | sub:data-protection
+
+### DOMAIN quality — Testing & Software Quality
+scope: testing levels; test design; TDD & BDD; test doubles & isolation; test automation; static analysis & linting; performance & load testing; formal methods & verification.
+quality.unit-testing | Unit Testing | sub:testing-levels
+quality.integration-testing | Integration Testing | sub:testing-levels
+quality.e2e-testing | End-to-End Testing | sub:testing-levels
+quality.component-testing | Component Testing | sub:testing-levels
+quality.test-pyramid | Test Pyramid | sub:testing-levels
+quality.smoke-sanity | Smoke & Sanity Tests | sub:testing-levels
+quality.acceptance-testing | Acceptance Testing | sub:testing-levels
+quality.equivalence-partitioning | Equivalence Partitioning | sub:test-design
+quality.boundary-value-analysis | Boundary Value Analysis | sub:test-design
+quality.decision-tables | Decision Tables | sub:test-design
+quality.coverage-metrics | Code Coverage Metrics | sub:test-design
+quality.property-based-testing | Property-Based Testing | sub:test-design
+quality.equivalence-vs-error-guessing | Error Guessing | sub:test-design
+quality.mutation-testing | Mutation Testing | sub:test-design
+quality.combinatorial-testing | Combinatorial Testing | sub:test-design
+quality.tdd-cycle | Red-Green-Refactor | sub:tdd-bdd
+quality.tdd | Test-Driven Development | sub:tdd-bdd
+quality.bdd | Behavior-Driven Development | sub:tdd-bdd
+quality.gherkin | Gherkin & Given-When-Then | sub:tdd-bdd
+quality.specification-by-example | Specification by Example | sub:tdd-bdd
+quality.outside-in-tdd | Outside-In TDD | sub:tdd-bdd
+quality.atdd | Acceptance Test-Driven Dev | sub:tdd-bdd
+quality.test-doubles-taxonomy | Test Doubles Taxonomy | sub:test-doubles
+quality.mocks | Mocks | sub:test-doubles
+quality.stubs | Stubs | sub:test-doubles
+quality.fakes | Fakes | sub:test-doubles
+quality.spies | Spies | sub:test-doubles
+quality.dependency-injection-testing | Dependency Injection for Tests | sub:test-doubles
+quality.test-isolation | Test Isolation | sub:test-doubles
+quality.mocking-pitfalls | Over-Mocking Pitfalls | sub:test-doubles
+quality.test-frameworks | Test Frameworks & Runners | sub:test-automation
+quality.ci-test-integration | CI Test Integration | sub:test-automation
+quality.flaky-tests | Flaky Test Management | sub:test-automation
+quality.test-data-management | Test Data Management | sub:test-automation
+quality.ui-automation | UI Test Automation | sub:test-automation
+quality.visual-regression | Visual Regression Testing | sub:test-automation
+quality.contract-testing | Contract Testing | sub:test-automation
+quality.snapshot-testing | Snapshot Testing | sub:test-automation
+quality.linting | Linting | sub:static-analysis
+quality.static-type-checking | Static Type Checking | sub:static-analysis
+quality.data-flow-analysis | Data-Flow Analysis | sub:static-analysis
+quality.sast | SAST Security Scanning | sub:static-analysis
+quality.code-formatters | Code Formatters | sub:static-analysis
+quality.complexity-metrics | Complexity Metrics | sub:static-analysis
+quality.linter-rules-config | Rule Config & False Positives | sub:static-analysis
+quality.load-testing | Load Testing | sub:perf-testing
+quality.stress-testing | Stress Testing | sub:perf-testing
+quality.soak-testing | Soak Testing | sub:perf-testing
+quality.spike-testing | Spike Testing | sub:perf-testing
+quality.perf-metrics-slo | Latency & Throughput Metrics | sub:perf-testing
+quality.perf-test-tooling | Load Testing Tools | sub:perf-testing
+quality.benchmarking | Benchmarking & Microbenchmarks | sub:perf-testing
+quality.formal-specification | Formal Specification | sub:formal-methods
+quality.model-checking | Model Checking | sub:formal-methods
+quality.theorem-proving | Theorem Proving | sub:formal-methods
+quality.design-by-contract | Design by Contract | sub:formal-methods
+quality.invariants-assertions | Invariants & Assertions | sub:formal-methods
+quality.symbolic-execution | Symbolic Execution | sub:formal-methods
+quality.smt-solvers | SMT & Constraint Solvers | sub:formal-methods
+
+### DOMAIN practice — Engineering Practice & Process
+scope: version control; code review & collaboration; development methodologies; estimation & planning; documentation & communication; code craftsmanship; debugging & troubleshooting; team & career.
+practice.git-internals | Git Internals | sub:version-control
+practice.branching-models | Branching Models | sub:version-control
+practice.merging-rebasing | Merging & Rebasing | sub:version-control
+practice.conflict-resolution | Merge Conflict Resolution | sub:version-control
+practice.commit-hygiene | Commit Hygiene | sub:version-control
+practice.monorepo-polyrepo | Monorepo vs Polyrepo | sub:version-control
+practice.git-recovery | History Recovery & Rewriting | sub:version-control
+practice.pull-requests | Pull Request Workflow | sub:code-review
+practice.review-feedback | Giving Review Feedback | sub:code-review
+practice.review-checklists | Review Focus & Checklists | sub:code-review
+practice.pr-sizing | Change Sizing & Stacking | sub:code-review
+practice.pairing | Pair & Mob Programming | sub:code-review
+practice.review-culture | Review Culture | sub:code-review
+practice.agile-principles | Agile Principles | sub:methodologies
+practice.scrum | Scrum Framework | sub:methodologies
+practice.kanban | Kanban & Flow | sub:methodologies
+practice.xp-practices | Extreme Programming | sub:methodologies
+practice.lean-software | Lean Software | sub:methodologies
+practice.waterfall | Waterfall & Stage-Gate | sub:methodologies
+practice.scaling-agile | Scaling Frameworks | sub:methodologies
+practice.story-points | Relative Estimation | sub:estimation-planning
+practice.planning-poker | Estimation Techniques | sub:estimation-planning
+practice.velocity-throughput | Velocity & Throughput | sub:estimation-planning
+practice.backlog-mgmt | Backlog Management | sub:estimation-planning
+practice.roadmapping | Roadmapping | sub:estimation-planning
+practice.cone-uncertainty | Estimation Uncertainty | sub:estimation-planning
+practice.prioritization | Prioritization Frameworks | sub:estimation-planning
+practice.technical-writing | Technical Writing | sub:documentation
+practice.design-docs | Design Documents | sub:documentation
+practice.adr | Architecture Decision Records | sub:documentation
+practice.docs-as-code | Docs as Code | sub:documentation
+practice.diagramming | Diagramming & Modeling | sub:documentation
+practice.async-comms | Async Communication | sub:documentation
+practice.runbooks | Runbooks & Knowledge Base | sub:documentation
+practice.clean-code | Clean Code | sub:code-craft
+practice.naming | Naming | sub:code-craft
+practice.code-smells | Code Smells | sub:code-craft
+practice.tech-debt | Technical Debt | sub:code-craft
+practice.boy-scout-rule | Incremental Improvement | sub:code-craft
+practice.defensive-programming | Defensive Programming | sub:code-craft
+practice.simplicity-yagni | Simplicity & YAGNI | sub:code-craft
+practice.scientific-debugging | Scientific Debugging | sub:debugging
+practice.reproduction | Bug Reproduction | sub:debugging
+practice.debugger-tools | Debuggers & Tooling | sub:debugging
+practice.print-logging-debug | Logging & Tracing for Debug | sub:debugging
+practice.bisection | Bisection | sub:debugging
+practice.root-cause-analysis | Root Cause Analysis | sub:debugging
+practice.heisenbugs | Concurrency & Heisenbugs | sub:debugging
+practice.mentorship | Mentorship & Coaching | sub:career-team
+practice.tech-leadership | Technical Leadership | sub:career-team
+practice.ic-vs-management | IC & Management Tracks | sub:career-team
+practice.deep-work | Focus & Deep Work | sub:career-team
+practice.team-dynamics | Team Topologies & Dynamics | sub:career-team
+practice.feedback-growth | Feedback & Performance | sub:career-team
+practice.engineering-ethics | Engineering Ethics | sub:career-team
+
+### DOMAIN perf — Performance & Observability
+scope: performance fundamentals; profiling & measurement; optimization techniques; caching; scalability; observability; monitoring & alerting; incident & reliability practice.
+perf.latency-throughput | Latency vs Throughput | sub:perf-fundamentals
+perf.tail-latency | Tail Latency | sub:perf-fundamentals
+perf.littles-law | Little's Law | sub:perf-fundamentals
+perf.queueing-theory | Queueing Theory | sub:perf-fundamentals
+perf.usl | Universal Scalability Law | sub:perf-fundamentals
+perf.amdahl-law | Amdahl's Law | sub:perf-fundamentals
+perf.resource-saturation | Saturation & Bottlenecks | sub:perf-fundamentals
+perf.cpu-profiling | CPU Profiling | sub:profiling
+perf.flame-graphs | Flame Graphs | sub:profiling
+perf.sampling-vs-instrumentation | Sampling vs Instrumentation | sub:profiling
+perf.memory-profiling | Memory Profiling | sub:profiling
+perf.benchmarking | Benchmarking | sub:profiling
+perf.microbenchmark-pitfalls | Microbenchmark Pitfalls | sub:profiling
+perf.continuous-profiling | Continuous Profiling | sub:profiling
+perf.algorithmic-optimization | Algorithmic Optimization | sub:optimization
+perf.data-locality | Data Locality | sub:optimization
+perf.batching | Batching & Coalescing | sub:optimization
+perf.lazy-eager | Lazy vs Eager Evaluation | sub:optimization
+perf.memoization | Memoization | sub:optimization
+perf.io-optimization | I/O & Syscall Reduction | sub:optimization
+perf.concurrency-optimization | Parallelization | sub:optimization
+perf.premature-optimization | Premature Optimization | sub:optimization
+perf.cache-hierarchy | Cache Levels & Tiers | sub:caching-perf
+perf.eviction-policies | Eviction Policies | sub:caching-perf
+perf.cache-invalidation | Cache Invalidation | sub:caching-perf
+perf.cache-patterns | Caching Patterns | sub:caching-perf
+perf.cache-stampede | Cache Stampede | sub:caching-perf
+perf.content-delivery | Content Delivery Networks | sub:caching-perf
+perf.cache-coherence-perf | Distributed Cache Consistency | sub:caching-perf
+perf.vertical-horizontal | Vertical vs Horizontal Scaling | sub:scalability
+perf.load-balancing | Load Balancing | sub:scalability
+perf.statelessness | Stateless Services | sub:scalability
+perf.autoscaling | Autoscaling | sub:scalability
+perf.capacity-planning | Capacity Planning | sub:scalability
+perf.backpressure | Backpressure | sub:scalability
+perf.load-shedding | Load Shedding | sub:scalability
+perf.sharding-scale | Sharding for Scale | sub:scalability
+perf.three-pillars | Three Pillars | sub:observability
+perf.structured-logging | Structured Logging | sub:observability
+perf.metrics-types | Metric Types | sub:observability
+perf.distributed-tracing | Distributed Tracing | sub:observability
+perf.context-propagation | Context Propagation | sub:observability
+perf.opentelemetry | OpenTelemetry | sub:observability
+perf.cardinality | Cardinality Management | sub:observability
+perf.sampling-traces | Trace Sampling | sub:observability
+perf.golden-signals | Four Golden Signals | sub:monitoring
+perf.slo-sli | SLIs, SLOs & SLAs | sub:monitoring
+perf.error-budgets | Error Budgets | sub:monitoring
+perf.alerting | Alerting Design | sub:monitoring
+perf.alert-fatigue | Alert Fatigue | sub:monitoring
+perf.dashboards | Dashboards & Visualization | sub:monitoring
+perf.synthetic-monitoring | Synthetic & RUM | sub:monitoring
+perf.anomaly-detection | Anomaly Detection | sub:monitoring
+perf.incident-response | Incident Response | sub:incident
+perf.incident-command | Incident Command | sub:incident
+perf.oncall | On-Call Practice | sub:incident
+perf.postmortems | Blameless Postmortems | sub:incident
+perf.root-cause-analysis | Root Cause Analysis | sub:incident
+perf.mttr-metrics | MTTR & Reliability Metrics | sub:incident
+perf.chaos-engineering | Chaos Engineering | sub:incident
+perf.game-days | Game Days & DiRT | sub:incident
+perf.observability-vs-monitoring | Observability vs Monitoring | sub:observability

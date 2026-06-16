@@ -31,10 +31,12 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          # Serve the knowledge map at the site root
+          # Serve the AI/ML knowledge map at the site root
           cp ai-knowledge-map.html _site/index.html
           # Keep the original filename reachable too
           cp ai-knowledge-map.html _site/ai-knowledge-map.html
+          # Publish the Software Engineering knowledge map alongside it
+          cp software-engineering-map.html _site/software-engineering-map.html
           # Skip Jekyll processing of the static files
           touch _site/.nojekyll
 

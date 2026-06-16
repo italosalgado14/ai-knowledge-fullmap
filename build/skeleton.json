@@ -1,0 +1,742 @@
+{
+ "domains": [
+  {
+   "key": "prog",
+   "title": "Programming Languages & Paradigms",
+   "color": "#6366f1",
+   "scope": "programming paradigms; type systems; syntax & semantics; memory & resource management; core language features; metaprogramming & reflection; runtimes & execution models; language families & idioms."
+  },
+  {
+   "key": "dsa",
+   "title": "Data Structures & Algorithms",
+   "color": "#14b8a6",
+   "scope": "complexity & analysis; linear structures; trees & heaps; graphs; algorithm design techniques; sorting & searching; string algorithms; advanced & specialized algorithms."
+  },
+  {
+   "key": "systems",
+   "title": "Computer Architecture & Compilers",
+   "color": "#ec4899",
+   "scope": "digital logic & hardware; CPU architecture; memory hierarchy; assembly & machine code; compiler front end; compiler back end; linking, loading & binaries; hardware performance."
+  },
+  {
+   "key": "os",
+   "title": "Operating Systems & Concurrency",
+   "color": "#f59e0b",
+   "scope": "processes & threads; CPU scheduling; memory management; concurrency primitives; synchronization & hazards; inter-process communication; file systems & I/O; parallel & async models."
+  },
+  {
+   "key": "net",
+   "title": "Networking & Protocols",
+   "color": "#22c55e",
+   "scope": "network models; link & physical layer; network layer & routing; transport layer; application protocols; HTTP & web transport; network security; network programming & tools."
+  },
+  {
+   "key": "data",
+   "title": "Databases & Data Management",
+   "color": "#a855f7",
+   "scope": "relational model; SQL; transactions & concurrency; indexing & storage engines; query processing & optimization; NoSQL & alternative models; data modeling & design; data engineering & warehousing."
+  },
+  {
+   "key": "distributed",
+   "title": "Distributed Systems",
+   "color": "#ef4444",
+   "scope": "fundamentals (failure, time, CAP); consistency models; consensus & coordination; replication & partitioning; messaging & streaming; distributed data; fault tolerance & resilience; distributed patterns."
+  },
+  {
+   "key": "arch",
+   "title": "Software Design & Architecture",
+   "color": "#3b82f6",
+   "scope": "design principles; design patterns; architectural styles; domain-driven design; API & interface design; modularity & components; quality attributes; refactoring & evolution."
+  },
+  {
+   "key": "web",
+   "title": "Web & Frontend Engineering",
+   "color": "#f97316",
+   "scope": "web fundamentals; HTML & CSS; JavaScript & the platform; component frameworks; state & data management; rendering & delivery; performance & accessibility; modern web platform."
+  },
+  {
+   "key": "backend",
+   "title": "Backend & API Engineering",
+   "color": "#10b981",
+   "scope": "server architecture; REST & HTTP APIs; RPC & GraphQL; authentication & authorization; caching & performance; async & background work; microservices & integration; backend data access."
+  },
+  {
+   "key": "devops",
+   "title": "DevOps, CI/CD & Infrastructure",
+   "color": "#8b5cf6",
+   "scope": "CI/CD pipelines; build systems & dependency management; containers & images; container orchestration; infrastructure as code; configuration & secrets; deployment strategies; release & artifact management."
+  },
+  {
+   "key": "cloud",
+   "title": "Cloud & Platform Engineering",
+   "color": "#06b6d4",
+   "scope": "cloud service models; compute; cloud storage; cloud networking; serverless & event-driven; site reliability engineering; reliability & resilience; cost & governance."
+  },
+  {
+   "key": "security",
+   "title": "Security Engineering",
+   "color": "#f43f5e",
+   "scope": "security fundamentals; cryptography; application security; identity & access; network & infra security; secure development; security operations; data protection & privacy."
+  },
+  {
+   "key": "quality",
+   "title": "Testing & Software Quality",
+   "color": "#eab308",
+   "scope": "testing levels; test design; TDD & BDD; test doubles & isolation; test automation; static analysis & linting; performance & load testing; formal methods & verification."
+  },
+  {
+   "key": "practice",
+   "title": "Engineering Practice & Process",
+   "color": "#0ea5e9",
+   "scope": "version control; code review & collaboration; development methodologies; estimation & planning; documentation & communication; code craftsmanship; debugging & troubleshooting; team & career."
+  },
+  {
+   "key": "perf",
+   "title": "Performance & Observability",
+   "color": "#d946ef",
+   "scope": "performance fundamentals; profiling & measurement; optimization techniques; caching; scalability; observability; monitoring & alerting; incident & reliability practice."
+  }
+ ],
+ "subdomains": [
+  {
+   "domain": "prog",
+   "key": "paradigms",
+   "label": "Programming Paradigms"
+  },
+  {
+   "domain": "prog",
+   "key": "type-systems",
+   "label": "Type Systems"
+  },
+  {
+   "domain": "prog",
+   "key": "language-semantics",
+   "label": "Syntax & Semantics"
+  },
+  {
+   "domain": "prog",
+   "key": "memory-model",
+   "label": "Memory & Resource Management"
+  },
+  {
+   "domain": "prog",
+   "key": "lang-features",
+   "label": "Core Language Features"
+  },
+  {
+   "domain": "prog",
+   "key": "metaprogramming",
+   "label": "Metaprogramming & Reflection"
+  },
+  {
+   "domain": "prog",
+   "key": "runtime",
+   "label": "Runtimes & Execution Models"
+  },
+  {
+   "domain": "prog",
+   "key": "lang-families",
+   "label": "Language Families & Idioms"
+  },
+  {
+   "domain": "dsa",
+   "key": "complexity",
+   "label": "Complexity & Analysis"
+  },
+  {
+   "domain": "dsa",
+   "key": "linear-ds",
+   "label": "Linear Structures"
+  },
+  {
+   "domain": "dsa",
+   "key": "trees",
+   "label": "Trees & Heaps"
+  },
+  {
+   "domain": "dsa",
+   "key": "graphs-ds",
+   "label": "Graph Structures & Algorithms"
+  },
+  {
+   "domain": "dsa",
+   "key": "algo-design",
+   "label": "Algorithm Design Techniques"
+  },
+  {
+   "domain": "dsa",
+   "key": "sorting-searching",
+   "label": "Sorting & Searching"
+  },
+  {
+   "domain": "dsa",
+   "key": "strings",
+   "label": "String Algorithms"
+  },
+  {
+   "domain": "dsa",
+   "key": "advanced-algo",
+   "label": "Advanced & Specialized Algorithms"
+  },
+  {
+   "domain": "systems",
+   "key": "digital-logic",
+   "label": "Digital Logic & Hardware"
+  },
+  {
+   "domain": "systems",
+   "key": "cpu-arch",
+   "label": "CPU Architecture"
+  },
+  {
+   "domain": "systems",
+   "key": "memory-hierarchy",
+   "label": "Memory Hierarchy"
+  },
+  {
+   "domain": "systems",
+   "key": "assembly",
+   "label": "Assembly & Machine Code"
+  },
+  {
+   "domain": "systems",
+   "key": "compilers-frontend",
+   "label": "Compiler Front End"
+  },
+  {
+   "domain": "systems",
+   "key": "compilers-backend",
+   "label": "Compiler Back End"
+  },
+  {
+   "domain": "systems",
+   "key": "linking-loading",
+   "label": "Linking, Loading & Binaries"
+  },
+  {
+   "domain": "systems",
+   "key": "perf-arch",
+   "label": "Hardware Performance"
+  },
+  {
+   "domain": "os",
+   "key": "processes",
+   "label": "Processes & Threads"
+  },
+  {
+   "domain": "os",
+   "key": "scheduling",
+   "label": "CPU Scheduling"
+  },
+  {
+   "domain": "os",
+   "key": "memory-mgmt",
+   "label": "Memory Management"
+  },
+  {
+   "domain": "os",
+   "key": "concurrency",
+   "label": "Concurrency Primitives"
+  },
+  {
+   "domain": "os",
+   "key": "sync-problems",
+   "label": "Synchronization & Hazards"
+  },
+  {
+   "domain": "os",
+   "key": "ipc",
+   "label": "Inter-Process Communication"
+  },
+  {
+   "domain": "os",
+   "key": "filesystems",
+   "label": "File Systems & I/O"
+  },
+  {
+   "domain": "os",
+   "key": "parallelism",
+   "label": "Parallel & Async Models"
+  },
+  {
+   "domain": "net",
+   "key": "net-models",
+   "label": "Network Models"
+  },
+  {
+   "domain": "net",
+   "key": "link-physical",
+   "label": "Link & Physical Layer"
+  },
+  {
+   "domain": "net",
+   "key": "ip-routing",
+   "label": "Network Layer & Routing"
+  },
+  {
+   "domain": "net",
+   "key": "transport",
+   "label": "Transport Layer"
+  },
+  {
+   "domain": "net",
+   "key": "app-protocols",
+   "label": "Application Protocols"
+  },
+  {
+   "domain": "net",
+   "key": "http-deep",
+   "label": "HTTP & Web Transport"
+  },
+  {
+   "domain": "net",
+   "key": "net-security",
+   "label": "Network Security"
+  },
+  {
+   "domain": "net",
+   "key": "net-tools",
+   "label": "Network Programming & Tools"
+  },
+  {
+   "domain": "data",
+   "key": "relational",
+   "label": "Relational Model"
+  },
+  {
+   "domain": "data",
+   "key": "sql",
+   "label": "SQL"
+  },
+  {
+   "domain": "data",
+   "key": "transactions",
+   "label": "Transactions & Concurrency"
+  },
+  {
+   "domain": "data",
+   "key": "indexing-storage",
+   "label": "Indexing & Storage Engines"
+  },
+  {
+   "domain": "data",
+   "key": "query-optimization",
+   "label": "Query Processing & Optimization"
+  },
+  {
+   "domain": "data",
+   "key": "nosql",
+   "label": "NoSQL & Alternative Models"
+  },
+  {
+   "domain": "data",
+   "key": "data-modeling",
+   "label": "Data Modeling & Design"
+  },
+  {
+   "domain": "data",
+   "key": "data-pipelines",
+   "label": "Data Engineering & Warehousing"
+  },
+  {
+   "domain": "distributed",
+   "key": "dist-fundamentals",
+   "label": "Fundamentals"
+  },
+  {
+   "domain": "distributed",
+   "key": "consistency",
+   "label": "Consistency Models"
+  },
+  {
+   "domain": "distributed",
+   "key": "consensus",
+   "label": "Consensus & Coordination"
+  },
+  {
+   "domain": "distributed",
+   "key": "replication",
+   "label": "Replication & Partitioning"
+  },
+  {
+   "domain": "distributed",
+   "key": "messaging",
+   "label": "Messaging & Streaming"
+  },
+  {
+   "domain": "distributed",
+   "key": "dist-data",
+   "label": "Distributed Data"
+  },
+  {
+   "domain": "distributed",
+   "key": "fault-tolerance",
+   "label": "Fault Tolerance & Resilience"
+  },
+  {
+   "domain": "distributed",
+   "key": "dist-patterns",
+   "label": "Distributed Patterns"
+  },
+  {
+   "domain": "arch",
+   "key": "design-principles",
+   "label": "Design Principles"
+  },
+  {
+   "domain": "arch",
+   "key": "design-patterns",
+   "label": "Design Patterns"
+  },
+  {
+   "domain": "arch",
+   "key": "arch-styles",
+   "label": "Architectural Styles"
+  },
+  {
+   "domain": "arch",
+   "key": "ddd",
+   "label": "Domain-Driven Design"
+  },
+  {
+   "domain": "arch",
+   "key": "api-design",
+   "label": "API & Interface Design"
+  },
+  {
+   "domain": "arch",
+   "key": "modularity",
+   "label": "Modularity & Components"
+  },
+  {
+   "domain": "arch",
+   "key": "arch-quality",
+   "label": "Quality Attributes"
+  },
+  {
+   "domain": "arch",
+   "key": "refactoring",
+   "label": "Refactoring & Evolution"
+  },
+  {
+   "domain": "web",
+   "key": "web-fundamentals",
+   "label": "Web Fundamentals"
+  },
+  {
+   "domain": "web",
+   "key": "html-css",
+   "label": "HTML & CSS"
+  },
+  {
+   "domain": "web",
+   "key": "js-frontend",
+   "label": "JavaScript & the Platform"
+  },
+  {
+   "domain": "web",
+   "key": "frontend-frameworks",
+   "label": "Component Frameworks"
+  },
+  {
+   "domain": "web",
+   "key": "state-data",
+   "label": "State & Data Management"
+  },
+  {
+   "domain": "web",
+   "key": "rendering-strategies",
+   "label": "Rendering & Delivery"
+  },
+  {
+   "domain": "web",
+   "key": "web-perf-a11y",
+   "label": "Performance & Accessibility"
+  },
+  {
+   "domain": "web",
+   "key": "web-platform",
+   "label": "Modern Web Platform"
+  },
+  {
+   "domain": "backend",
+   "key": "server-arch",
+   "label": "Server Architecture"
+  },
+  {
+   "domain": "backend",
+   "key": "rest-apis",
+   "label": "REST & HTTP APIs"
+  },
+  {
+   "domain": "backend",
+   "key": "rpc-graphql",
+   "label": "RPC & GraphQL"
+  },
+  {
+   "domain": "backend",
+   "key": "auth",
+   "label": "Authentication & Authorization"
+  },
+  {
+   "domain": "backend",
+   "key": "caching-be",
+   "label": "Caching & Performance"
+  },
+  {
+   "domain": "backend",
+   "key": "async-be",
+   "label": "Async & Background Work"
+  },
+  {
+   "domain": "backend",
+   "key": "microservices",
+   "label": "Microservices & Integration"
+  },
+  {
+   "domain": "backend",
+   "key": "backend-data",
+   "label": "Backend Data Access"
+  },
+  {
+   "domain": "devops",
+   "key": "cicd",
+   "label": "CI/CD Pipelines"
+  },
+  {
+   "domain": "devops",
+   "key": "build-systems",
+   "label": "Build Systems & Dependencies"
+  },
+  {
+   "domain": "devops",
+   "key": "containers",
+   "label": "Containers & Images"
+  },
+  {
+   "domain": "devops",
+   "key": "orchestration",
+   "label": "Container Orchestration"
+  },
+  {
+   "domain": "devops",
+   "key": "iac",
+   "label": "Infrastructure as Code"
+  },
+  {
+   "domain": "devops",
+   "key": "config-mgmt",
+   "label": "Configuration & Secrets"
+  },
+  {
+   "domain": "devops",
+   "key": "deployment",
+   "label": "Deployment Strategies"
+  },
+  {
+   "domain": "devops",
+   "key": "release",
+   "label": "Release & Artifact Management"
+  },
+  {
+   "domain": "cloud",
+   "key": "cloud-models",
+   "label": "Cloud Service Models"
+  },
+  {
+   "domain": "cloud",
+   "key": "cloud-compute",
+   "label": "Compute"
+  },
+  {
+   "domain": "cloud",
+   "key": "cloud-storage",
+   "label": "Cloud Storage"
+  },
+  {
+   "domain": "cloud",
+   "key": "cloud-networking",
+   "label": "Cloud Networking"
+  },
+  {
+   "domain": "cloud",
+   "key": "serverless",
+   "label": "Serverless & Event-Driven"
+  },
+  {
+   "domain": "cloud",
+   "key": "sre",
+   "label": "Site Reliability Engineering"
+  },
+  {
+   "domain": "cloud",
+   "key": "reliability",
+   "label": "Reliability & Resilience"
+  },
+  {
+   "domain": "cloud",
+   "key": "cloud-cost",
+   "label": "Cost & Governance"
+  },
+  {
+   "domain": "security",
+   "key": "sec-fundamentals",
+   "label": "Security Fundamentals"
+  },
+  {
+   "domain": "security",
+   "key": "cryptography",
+   "label": "Cryptography"
+  },
+  {
+   "domain": "security",
+   "key": "appsec",
+   "label": "Application Security"
+  },
+  {
+   "domain": "security",
+   "key": "authn-authz",
+   "label": "Identity & Access"
+  },
+  {
+   "domain": "security",
+   "key": "network-sec",
+   "label": "Network & Infra Security"
+  },
+  {
+   "domain": "security",
+   "key": "secure-coding",
+   "label": "Secure Development"
+  },
+  {
+   "domain": "security",
+   "key": "sec-ops",
+   "label": "Security Operations"
+  },
+  {
+   "domain": "security",
+   "key": "data-protection",
+   "label": "Data Protection & Privacy"
+  },
+  {
+   "domain": "quality",
+   "key": "testing-levels",
+   "label": "Testing Levels"
+  },
+  {
+   "domain": "quality",
+   "key": "test-design",
+   "label": "Test Design"
+  },
+  {
+   "domain": "quality",
+   "key": "tdd-bdd",
+   "label": "TDD & BDD"
+  },
+  {
+   "domain": "quality",
+   "key": "test-doubles",
+   "label": "Test Doubles & Isolation"
+  },
+  {
+   "domain": "quality",
+   "key": "test-automation",
+   "label": "Test Automation"
+  },
+  {
+   "domain": "quality",
+   "key": "static-analysis",
+   "label": "Static Analysis & Linting"
+  },
+  {
+   "domain": "quality",
+   "key": "perf-testing",
+   "label": "Performance & Load Testing"
+  },
+  {
+   "domain": "quality",
+   "key": "formal-methods",
+   "label": "Formal Methods & Verification"
+  },
+  {
+   "domain": "practice",
+   "key": "version-control",
+   "label": "Version Control"
+  },
+  {
+   "domain": "practice",
+   "key": "code-review",
+   "label": "Code Review & Collaboration"
+  },
+  {
+   "domain": "practice",
+   "key": "methodologies",
+   "label": "Development Methodologies"
+  },
+  {
+   "domain": "practice",
+   "key": "estimation-planning",
+   "label": "Estimation & Planning"
+  },
+  {
+   "domain": "practice",
+   "key": "documentation",
+   "label": "Documentation & Communication"
+  },
+  {
+   "domain": "practice",
+   "key": "code-craft",
+   "label": "Code Craftsmanship"
+  },
+  {
+   "domain": "practice",
+   "key": "debugging",
+   "label": "Debugging & Troubleshooting"
+  },
+  {
+   "domain": "practice",
+   "key": "career-team",
+   "label": "Team & Career"
+  },
+  {
+   "domain": "perf",
+   "key": "perf-fundamentals",
+   "label": "Performance Fundamentals"
+  },
+  {
+   "domain": "perf",
+   "key": "profiling",
+   "label": "Profiling & Measurement"
+  },
+  {
+   "domain": "perf",
+   "key": "optimization",
+   "label": "Optimization Techniques"
+  },
+  {
+   "domain": "perf",
+   "key": "caching-perf",
+   "label": "Caching"
+  },
+  {
+   "domain": "perf",
+   "key": "scalability",
+   "label": "Scalability"
+  },
+  {
+   "domain": "perf",
+   "key": "observability",
+   "label": "Observability"
+  },
+  {
+   "domain": "perf",
+   "key": "monitoring",
+   "label": "Monitoring & Alerting"
+  },
+  {
+   "domain": "perf",
+   "key": "incident",
+   "label": "Incident & Reliability Practice"
+  }
+ ]
+}
