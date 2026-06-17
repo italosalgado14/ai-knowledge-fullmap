@@ -1,0 +1,1142 @@
+[
+  {
+    "source": "foundations.tcp-ip",
+    "target": "web-foundations.tcp-udp",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.tcp-ip",
+    "target": "web-foundations.ip-addressing",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.ports-sockets-cs",
+    "target": "web-foundations.ports-sockets",
+    "type": "related"
+  },
+  {
+    "source": "foundations.http-lifecycle",
+    "target": "web-foundations.http-request-response",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.http-lifecycle",
+    "target": "web-foundations.url-walkthrough",
+    "type": "related"
+  },
+  {
+    "source": "foundations.tls-handshake-applied",
+    "target": "web-foundations.https-tls-handshake",
+    "type": "related"
+  },
+  {
+    "source": "foundations.tls-handshake-applied",
+    "target": "auth-security.tls-https",
+    "type": "related"
+  },
+  {
+    "source": "foundations.latency-bandwidth",
+    "target": "performance.response-time",
+    "type": "related"
+  },
+  {
+    "source": "foundations.event-loop",
+    "target": "web-foundations.js-engine-execution",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.event-loop",
+    "target": "frontend-core.event-loop",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.async-await-promises",
+    "target": "frontend-core.async-promises",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.concurrency-vs-parallelism",
+    "target": "backend.event-loop",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.event-loop",
+    "target": "backend.nodejs-runtime",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.process-vs-thread",
+    "target": "backend.clustering-workers",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.async-await-promises",
+    "target": "backend.non-blocking-io",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.async-await-promises",
+    "target": "performance.async-nonblocking",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.race-conditions",
+    "target": "databases.locking",
+    "type": "related"
+  },
+  {
+    "source": "foundations.race-conditions",
+    "target": "databases.isolation-levels",
+    "type": "related"
+  },
+  {
+    "source": "foundations.race-conditions",
+    "target": "backend.idempotency",
+    "type": "related"
+  },
+  {
+    "source": "foundations.trees",
+    "target": "web-foundations.dom-construction",
+    "type": "related"
+  },
+  {
+    "source": "foundations.trees",
+    "target": "frontend-core.dom-api",
+    "type": "related"
+  },
+  {
+    "source": "foundations.graphs",
+    "target": "databases.graph-databases",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.big-o",
+    "target": "databases.indexes",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.complexity-classes",
+    "target": "performance.query-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "foundations.premature-optimization",
+    "target": "performance.profiling",
+    "type": "related"
+  },
+  {
+    "source": "foundations.hashing-lookup",
+    "target": "databases.key-value-stores",
+    "type": "related"
+  },
+  {
+    "source": "foundations.stacks-queues",
+    "target": "backend.job-queues",
+    "type": "related"
+  },
+  {
+    "source": "foundations.debugging-strategy",
+    "target": "tooling.breakpoints",
+    "type": "related"
+  },
+  {
+    "source": "foundations.debugging-strategy",
+    "target": "performance.debugging-production",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.http-methods",
+    "target": "apis.http-methods",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-status-codes",
+    "target": "apis.status-codes",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-request-response",
+    "target": "apis.rest-principles",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-headers",
+    "target": "apis.content-negotiation",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.client-server",
+    "target": "apis.rest-principles",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.cors",
+    "target": "apis.cors",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.websockets",
+    "target": "apis.websockets",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.sse-streaming",
+    "target": "apis.sse",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-request-response",
+    "target": "backend.routing",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-methods",
+    "target": "backend.routing",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-headers",
+    "target": "backend.middleware-pipeline",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.form-encoding",
+    "target": "backend.multipart-parsing",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.form-encoding",
+    "target": "backend.file-uploads",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.reverse-proxy",
+    "target": "backend.serving-static-files",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.dom-construction",
+    "target": "backend.ssr-html",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.cookies",
+    "target": "auth-security.cookies",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.cookies",
+    "target": "auth-security.session-auth",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.https-tls-handshake",
+    "target": "auth-security.tls-https",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.https-everywhere",
+    "target": "auth-security.tls-https",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.cors",
+    "target": "auth-security.cors",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.csp",
+    "target": "auth-security.csp",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.security-headers",
+    "target": "auth-security.security-headers",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.common-web-attacks",
+    "target": "auth-security.owasp-top10",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.same-origin-policy",
+    "target": "auth-security.cors",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.browser-storage",
+    "target": "auth-security.token-storage",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.cdn",
+    "target": "performance.cdn-caching",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.http-caching",
+    "target": "performance.http-caching",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.compression",
+    "target": "performance.bundle-optimization",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.critical-rendering-path",
+    "target": "performance.critical-css-fonts",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.critical-rendering-path",
+    "target": "performance.lcp",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.layout-paint",
+    "target": "performance.cls",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.reverse-proxy",
+    "target": "devops.reverse-proxy",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.reverse-proxy",
+    "target": "devops.nginx",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.static-hosting",
+    "target": "devops.static-hosting",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.hosting-types",
+    "target": "devops.paas",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.dns-resolution",
+    "target": "devops.dns-for-deploys",
+    "type": "prereq"
+  },
+  {
+    "source": "web-foundations.https-tls-handshake",
+    "target": "devops.tls-termination",
+    "type": "related"
+  },
+  {
+    "source": "web-foundations.https-everywhere",
+    "target": "devops.lets-encrypt",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.typescript",
+    "target": "frontend-frameworks.react",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.es6-features",
+    "target": "frontend-frameworks.react",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.dom-api",
+    "target": "frontend-frameworks.virtual-dom",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.fetch-xhr",
+    "target": "frontend-frameworks.server-state-caching",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.async-promises",
+    "target": "frontend-frameworks.useeffect",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.closures",
+    "target": "frontend-frameworks.custom-hooks",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.utility-first-css",
+    "target": "frontend-frameworks.tailwind",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.custom-properties",
+    "target": "frontend-frameworks.theming-dark-mode",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.custom-properties",
+    "target": "frontend-frameworks.design-tokens",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.forms-inputs",
+    "target": "frontend-frameworks.controlled-uncontrolled",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.aria",
+    "target": "frontend-frameworks.component-accessibility",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.keyboard-navigation",
+    "target": "frontend-frameworks.component-accessibility",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.es-modules",
+    "target": "tooling.module-bundling",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.es-modules",
+    "target": "tooling.tree-shaking",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.typescript",
+    "target": "tooling.tsc",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.ts-config-tooling",
+    "target": "tooling.tsc",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.typescript",
+    "target": "tooling.swc",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.preprocessors",
+    "target": "tooling.postcss",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.fetch-xhr",
+    "target": "apis.http-clients",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.fetch-xhr",
+    "target": "apis.rest-principles",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.web-storage",
+    "target": "auth-security.token-storage",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.forms-inputs",
+    "target": "web-foundations.form-encoding",
+    "type": "related"
+  },
+  {
+    "source": "frontend-core.media-images",
+    "target": "performance.image-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-core.a11y-testing",
+    "target": "testing.a11y-testing",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-frameworks.server-state-caching",
+    "target": "apis.http-clients",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.schema-validation",
+    "target": "backend.schema-validation",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.server-state-caching",
+    "target": "apis.trpc",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.route-guards",
+    "target": "auth-security.authn-vs-authz",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.ssr",
+    "target": "backend.ssr-html",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.nextjs",
+    "target": "devops.vercel",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.ssg",
+    "target": "devops.static-hosting",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.htmx-hypermedia",
+    "target": "backend.htmx",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.tailwind",
+    "target": "tooling.postcss",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.lazy-route-loading",
+    "target": "tooling.code-splitting",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-frameworks.lazy-route-loading",
+    "target": "performance.code-splitting",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-frameworks.react-perf-hooks",
+    "target": "performance.render-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "frontend-frameworks.hydration",
+    "target": "performance.inp",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.component-model",
+    "target": "architecture.modularity",
+    "type": "related"
+  },
+  {
+    "source": "frontend-frameworks.storybook",
+    "target": "testing.storybook-tests",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.node-version-managers",
+    "target": "backend.nodejs-runtime",
+    "type": "related"
+  },
+  {
+    "source": "tooling.dotenv",
+    "target": "backend.config-env",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.semver",
+    "target": "professional.semantic-versioning",
+    "type": "related"
+  },
+  {
+    "source": "tooling.dotenv",
+    "target": "auth-security.secrets-management",
+    "type": "related"
+  },
+  {
+    "source": "tooling.git-hooks",
+    "target": "professional.git-fundamentals",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.git-hooks",
+    "target": "testing.tests-in-ci",
+    "type": "related"
+  },
+  {
+    "source": "tooling.commit-linting",
+    "target": "professional.conventional-commits",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.eslint",
+    "target": "testing.linters-as-gates",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.eslint",
+    "target": "testing.static-analysis",
+    "type": "related"
+  },
+  {
+    "source": "tooling.tsc",
+    "target": "testing.type-checking",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.code-splitting",
+    "target": "performance.code-splitting",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.tree-shaking",
+    "target": "performance.bundle-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.module-bundling",
+    "target": "performance.bundle-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.source-maps",
+    "target": "performance.source-maps-prod",
+    "type": "prereq"
+  },
+  {
+    "source": "tooling.performance-profiler",
+    "target": "performance.profiling",
+    "type": "related"
+  },
+  {
+    "source": "tooling.workspaces",
+    "target": "architecture.monorepo-vs-polyrepo",
+    "type": "related"
+  },
+  {
+    "source": "tooling.module-federation",
+    "target": "architecture.microservices",
+    "type": "related"
+  },
+  {
+    "source": "backend.routing",
+    "target": "apis.resources-uris",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.middleware-pipeline",
+    "target": "apis.rate-limiting",
+    "type": "related"
+  },
+  {
+    "source": "backend.fastapi",
+    "target": "apis.openapi",
+    "type": "related"
+  },
+  {
+    "source": "backend.schema-validation",
+    "target": "apis.error-design",
+    "type": "related"
+  },
+  {
+    "source": "backend.streaming",
+    "target": "apis.streaming-rpc",
+    "type": "related"
+  },
+  {
+    "source": "backend.middleware-pipeline",
+    "target": "auth-security.authn-vs-authz",
+    "type": "related"
+  },
+  {
+    "source": "backend.middleware-pipeline",
+    "target": "auth-security.rbac",
+    "type": "related"
+  },
+  {
+    "source": "backend.input-validation",
+    "target": "auth-security.input-validation",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.input-validation",
+    "target": "auth-security.sql-injection",
+    "type": "related"
+  },
+  {
+    "source": "backend.config-env",
+    "target": "auth-security.secrets-management",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.dependency-injection",
+    "target": "architecture.dependency-injection",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.mvc-pattern",
+    "target": "architecture.mvc-mvvm",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.controllers-handlers",
+    "target": "architecture.layer-separation",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.non-blocking-io",
+    "target": "performance.async-nonblocking",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.structured-logging",
+    "target": "performance.structured-logging",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.job-queues",
+    "target": "performance.queues-backpressure",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.job-queues",
+    "target": "architecture.message-queues",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.message-brokers",
+    "target": "architecture.message-queues",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.config-env",
+    "target": "devops.env-config",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.object-storage-integration",
+    "target": "databases.object-storage",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.object-storage-integration",
+    "target": "databases.file-storage-patterns",
+    "type": "related"
+  },
+  {
+    "source": "backend.idempotency",
+    "target": "apis.idempotency",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.django",
+    "target": "databases.other-orms",
+    "type": "related"
+  },
+  {
+    "source": "backend.express",
+    "target": "testing.api-route-testing",
+    "type": "prereq"
+  },
+  {
+    "source": "backend.dependency-injection",
+    "target": "testing.di-for-tests",
+    "type": "related"
+  },
+  {
+    "source": "databases.orm-concept",
+    "target": "architecture.repository-pattern",
+    "type": "related"
+  },
+  {
+    "source": "databases.n-plus-one",
+    "target": "apis.n-plus-one",
+    "type": "related"
+  },
+  {
+    "source": "databases.n-plus-one",
+    "target": "performance.n-plus-one",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.indexes",
+    "target": "performance.query-optimization",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.query-result-caching",
+    "target": "performance.server-side-caching",
+    "type": "related"
+  },
+  {
+    "source": "databases.cache-aside",
+    "target": "performance.cache-patterns",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.redis-memcached",
+    "target": "performance.redis-caching",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.cache-invalidation",
+    "target": "performance.cache-invalidation",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.session-storage",
+    "target": "performance.statelessness",
+    "type": "related"
+  },
+  {
+    "source": "databases.session-storage",
+    "target": "auth-security.session-auth",
+    "type": "related"
+  },
+  {
+    "source": "databases.schema-design",
+    "target": "architecture.layered-architecture",
+    "type": "related"
+  },
+  {
+    "source": "databases.schema-design",
+    "target": "professional.diagrams",
+    "type": "related"
+  },
+  {
+    "source": "databases.migrations",
+    "target": "testing.database-testing",
+    "type": "related"
+  },
+  {
+    "source": "databases.seeding",
+    "target": "testing.seeding-data",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.object-storage",
+    "target": "devops.cloud-storage",
+    "type": "prereq"
+  },
+  {
+    "source": "databases.base-eventual-consistency",
+    "target": "architecture.database-scaling",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.oauth2",
+    "target": "apis.oauth-client-flows",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.oauth-grants",
+    "target": "apis.oauth-client-flows",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.token-auth",
+    "target": "apis.api-keys-tokens",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.rate-limiting",
+    "target": "apis.rate-limiting",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.token-auth",
+    "target": "backend.middleware-pipeline",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.secrets-management",
+    "target": "devops.secrets-management",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.tls-https",
+    "target": "devops.tls-termination",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.certificates",
+    "target": "devops.lets-encrypt",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.least-privilege",
+    "target": "devops.iam",
+    "type": "prereq"
+  },
+  {
+    "source": "auth-security.identity-providers",
+    "target": "devops.baas",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.identity-providers",
+    "target": "devops.firebase",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.xss",
+    "target": "frontend-core.dom-api",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.csrf",
+    "target": "web-foundations.cookies",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.oidc",
+    "target": "frontend-frameworks.route-guards",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.supply-chain",
+    "target": "devops.pipeline",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.rate-limiting",
+    "target": "performance.rate-limiting",
+    "type": "related"
+  },
+  {
+    "source": "auth-security.sql-injection",
+    "target": "databases.sql-language",
+    "type": "related"
+  },
+  {
+    "source": "devops.continuous-integration",
+    "target": "testing.tests-in-ci",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.pipeline",
+    "target": "testing.tests-in-ci",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.build-test-deploy-stages",
+    "target": "testing.ci-quality-gates",
+    "type": "related"
+  },
+  {
+    "source": "devops.github-actions",
+    "target": "professional.git-hosting",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.github-actions",
+    "target": "professional.pull-requests",
+    "type": "related"
+  },
+  {
+    "source": "devops.continuous-delivery-deployment",
+    "target": "professional.branching-strategies",
+    "type": "related"
+  },
+  {
+    "source": "devops.autoscaling",
+    "target": "performance.autoscaling",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.load-balancer",
+    "target": "performance.load-balancing",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.serverless-functions",
+    "target": "architecture.serverless-arch",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.edge-functions",
+    "target": "performance.cdn-caching",
+    "type": "related"
+  },
+  {
+    "source": "devops.regions-az",
+    "target": "architecture.high-availability",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.load-balancer",
+    "target": "architecture.load-balancing",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.container-orchestration",
+    "target": "architecture.microservices",
+    "type": "related"
+  },
+  {
+    "source": "devops.docker",
+    "target": "testing.test-containers",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.docker-compose",
+    "target": "testing.test-containers",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.iac",
+    "target": "architecture.twelve-factor",
+    "type": "related"
+  },
+  {
+    "source": "devops.env-config",
+    "target": "architecture.config-separation",
+    "type": "prereq"
+  },
+  {
+    "source": "devops.managed-databases",
+    "target": "performance.connection-pooling",
+    "type": "related"
+  },
+  {
+    "source": "performance.distributed-tracing",
+    "target": "architecture.microservices",
+    "type": "related"
+  },
+  {
+    "source": "performance.statelessness",
+    "target": "architecture.statelessness",
+    "type": "prereq"
+  },
+  {
+    "source": "performance.horizontal-vertical",
+    "target": "architecture.scalability",
+    "type": "prereq"
+  },
+  {
+    "source": "performance.pagination",
+    "target": "apis.pagination",
+    "type": "related"
+  },
+  {
+    "source": "performance.rate-limiting",
+    "target": "apis.rate-limiting",
+    "type": "related"
+  },
+  {
+    "source": "architecture.code-review",
+    "target": "professional.code-review",
+    "type": "prereq"
+  },
+  {
+    "source": "architecture.refactoring",
+    "target": "testing.why-test",
+    "type": "related"
+  },
+  {
+    "source": "architecture.technical-debt",
+    "target": "professional.adr",
+    "type": "related"
+  },
+  {
+    "source": "architecture.dependency-injection",
+    "target": "testing.di-for-tests",
+    "type": "prereq"
+  },
+  {
+    "source": "architecture.observer-pubsub",
+    "target": "apis.pubsub",
+    "type": "related"
+  },
+  {
+    "source": "architecture.event-driven",
+    "target": "apis.pubsub",
+    "type": "related"
+  },
+  {
+    "source": "architecture.api-gateway",
+    "target": "apis.api-gateway",
+    "type": "prereq"
+  },
+  {
+    "source": "architecture.caching-layers",
+    "target": "databases.cache-aside",
+    "type": "related"
+  },
+  {
+    "source": "architecture.cdn",
+    "target": "web-foundations.cdn",
+    "type": "related"
+  },
+  {
+    "source": "architecture.scalability",
+    "target": "devops.autoscaling",
+    "type": "related"
+  },
+  {
+    "source": "architecture.microservices",
+    "target": "apis.schema-federation",
+    "type": "related"
+  },
+  {
+    "source": "architecture.bff",
+    "target": "apis.graphql-vs-rest",
+    "type": "related"
+  },
+  {
+    "source": "testing.contract-testing",
+    "target": "apis.contract-testing",
+    "type": "prereq"
+  },
+  {
+    "source": "testing.contract-testing",
+    "target": "apis.contract-first",
+    "type": "related"
+  },
+  {
+    "source": "testing.module-http-mocking",
+    "target": "apis.api-mocking",
+    "type": "related"
+  },
+  {
+    "source": "testing.ci-quality-gates",
+    "target": "performance.perf-budgets",
+    "type": "related"
+  },
+  {
+    "source": "testing.tdd",
+    "target": "professional.feedback",
+    "type": "related"
+  },
+  {
+    "source": "professional.ai-tests-docs",
+    "target": "testing.why-test",
+    "type": "related"
+  },
+  {
+    "source": "professional.ai-review-explain",
+    "target": "architecture.code-review",
+    "type": "related"
+  },
+  {
+    "source": "professional.api-docs",
+    "target": "apis.openapi",
+    "type": "prereq"
+  },
+  {
+    "source": "professional.api-docs",
+    "target": "apis.sdk-generation",
+    "type": "related"
+  },
+  {
+    "source": "professional.semantic-versioning",
+    "target": "apis.versioning",
+    "type": "related"
+  },
+  {
+    "source": "professional.protected-branches",
+    "target": "devops.continuous-integration",
+    "type": "related"
+  },
+  {
+    "source": "professional.docs-as-code",
+    "target": "tooling.vscode",
+    "type": "related"
+  }
+]

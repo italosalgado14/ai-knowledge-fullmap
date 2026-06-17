@@ -1,0 +1,610 @@
+{
+ "domains": [
+  {
+   "key": "web-foundations",
+   "title": "How the Web Works",
+   "color": "#0ea5e9",
+   "scope": "the substrate every web developer stands on: the internet, HTTP, DNS & hosting, how browsers run a page, baseline web security, and the data formats that flow over the wire."
+  },
+  {
+   "key": "frontend-core",
+   "title": "Frontend Foundations \u2014 HTML, CSS & JS",
+   "color": "#f97316",
+   "scope": "the raw materials of the browser UI: semantic HTML, CSS fundamentals & layout, modern CSS, the JavaScript language, the browser/DOM platform, TypeScript, and accessibility."
+  },
+  {
+   "key": "frontend-frameworks",
+   "title": "Frontend Frameworks & UI",
+   "color": "#f59e0b",
+   "scope": "building real UIs at scale: the component/SPA model, React & its ecosystem, the framework landscape, state management, routing, styling approaches, forms, UI/design systems, and rendering strategies."
+  },
+  {
+   "key": "tooling",
+   "title": "Tooling, Build & Dev Environment",
+   "color": "#eab308",
+   "scope": "the developer's workbench: package managers, bundlers & build systems, transpilers, linting & formatting, the editor/terminal environment, debugging tools, and monorepo tooling."
+  },
+  {
+   "key": "backend",
+   "title": "Backend Languages & Frameworks",
+   "color": "#10b981",
+   "scope": "the server side: backend languages, runtimes & app servers, web frameworks, request handling & middleware, server-side rendering/templating, validation & errors, background jobs, and file/media handling."
+  },
+  {
+   "key": "apis",
+   "title": "APIs & Communication",
+   "color": "#14b8a6",
+   "scope": "how clients and services talk: REST, API design, GraphQL, RPC/gRPC, real-time channels, API documentation & contracts, and consuming/integrating third-party APIs."
+  },
+  {
+   "key": "auth-security",
+   "title": "Authentication & Web Security",
+   "color": "#f43f5e",
+   "scope": "keeping the app and its users safe: authentication, sessions & tokens, OAuth/SSO, authorization, password & transport cryptography, the OWASP vulnerability classes, and secure-by-default practices."
+  },
+  {
+   "key": "databases",
+   "title": "Databases & Data Layer",
+   "color": "#a855f7",
+   "scope": "where state lives: relational databases, SQL, transactions & integrity, NoSQL stores, ORMs & query builders, data modeling & migrations, caching, and search/object storage."
+  },
+  {
+   "key": "testing",
+   "title": "Testing & Quality",
+   "color": "#84cc16",
+   "scope": "confidence that it works: testing fundamentals, unit testing, mocking & test doubles, integration testing, end-to-end testing, frontend testing, testing practices, and code-quality tooling."
+  },
+  {
+   "key": "devops",
+   "title": "DevOps, CI/CD & Deployment",
+   "color": "#8b5cf6",
+   "scope": "shipping and running it: CI/CD pipelines, containers, orchestration & scaling, hosting platforms, cloud providers, serverless & edge, web servers/networking, and infrastructure & configuration."
+  },
+  {
+   "key": "architecture",
+   "title": "Architecture & Code Quality",
+   "color": "#3b82f6",
+   "scope": "structuring code that lasts: clean code, design principles, design patterns, project structure, application architecture, system-design basics, and refactoring & technical debt."
+  },
+  {
+   "key": "performance",
+   "title": "Performance & Observability",
+   "color": "#d946ef",
+   "scope": "making it fast and watching it run: web performance, frontend optimization, backend performance, caching strategies, scaling & load, monitoring & metrics, logging & tracing, and error tracking."
+  },
+  {
+   "key": "foundations",
+   "title": "CS Foundations for Daily Work",
+   "color": "#6366f1",
+   "scope": "the computer-science you actually reach for: core data structures, everyday algorithms, complexity & Big-O, networking basics, concurrency & async, and problem-solving/interview patterns."
+  },
+  {
+   "key": "professional",
+   "title": "Collaboration & Professional Skills",
+   "color": "#ef4444",
+   "scope": "working as a developer among developers: version control, Git collaboration, agile process, documentation, communication & teamwork, career growth, and AI-assisted development."
+  }
+ ],
+ "subdomains": [
+  {
+   "domain": "web-foundations",
+   "key": "internet",
+   "label": "Internet & Client-Server"
+  },
+  {
+   "domain": "web-foundations",
+   "key": "http",
+   "label": "HTTP & HTTPS"
+  },
+  {
+   "domain": "web-foundations",
+   "key": "dns-hosting",
+   "label": "DNS, Domains & Hosting"
+  },
+  {
+   "domain": "web-foundations",
+   "key": "browsers",
+   "label": "How Browsers Work"
+  },
+  {
+   "domain": "web-foundations",
+   "key": "web-security-basics",
+   "label": "Web Security Basics"
+  },
+  {
+   "domain": "web-foundations",
+   "key": "formats",
+   "label": "Data Formats & Wire Protocols"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "html",
+   "label": "HTML & Semantics"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "css-fundamentals",
+   "label": "CSS Fundamentals"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "css-layout",
+   "label": "Layout & Responsive Design"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "css-modern",
+   "label": "Modern CSS & Styling"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "javascript",
+   "label": "JavaScript Language"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "js-browser",
+   "label": "JavaScript in the Browser"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "typescript",
+   "label": "TypeScript"
+  },
+  {
+   "domain": "frontend-core",
+   "key": "accessibility",
+   "label": "Accessibility (a11y)"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "spa-model",
+   "label": "SPA & Component Model"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "react",
+   "label": "React & Ecosystem"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "framework-landscape",
+   "label": "Framework Landscape"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "state-management",
+   "label": "State Management"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "routing",
+   "label": "Client-Side Routing"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "styling",
+   "label": "Styling Approaches"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "forms",
+   "label": "Forms & Validation"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "ui-systems",
+   "label": "UI Libraries & Design Systems"
+  },
+  {
+   "domain": "frontend-frameworks",
+   "key": "rendering",
+   "label": "Rendering Strategies & Meta-Frameworks"
+  },
+  {
+   "domain": "tooling",
+   "key": "package-managers",
+   "label": "Package Managers"
+  },
+  {
+   "domain": "tooling",
+   "key": "bundlers",
+   "label": "Bundlers & Build Systems"
+  },
+  {
+   "domain": "tooling",
+   "key": "transpilers",
+   "label": "Transpilers & Compilers"
+  },
+  {
+   "domain": "tooling",
+   "key": "linting",
+   "label": "Linting & Formatting"
+  },
+  {
+   "domain": "tooling",
+   "key": "dev-environment",
+   "label": "Editor, Shell & Environment"
+  },
+  {
+   "domain": "tooling",
+   "key": "debugging",
+   "label": "Debugging Tools"
+  },
+  {
+   "domain": "tooling",
+   "key": "monorepo",
+   "label": "Monorepos & Workspaces"
+  },
+  {
+   "domain": "backend",
+   "key": "languages",
+   "label": "Backend Languages"
+  },
+  {
+   "domain": "backend",
+   "key": "runtimes",
+   "label": "Runtimes & App Servers"
+  },
+  {
+   "domain": "backend",
+   "key": "frameworks",
+   "label": "Web Frameworks"
+  },
+  {
+   "domain": "backend",
+   "key": "request-handling",
+   "label": "Request Handling & Middleware"
+  },
+  {
+   "domain": "backend",
+   "key": "templating",
+   "label": "Server Rendering & Templating"
+  },
+  {
+   "domain": "backend",
+   "key": "validation-errors",
+   "label": "Validation & Error Handling"
+  },
+  {
+   "domain": "backend",
+   "key": "background-jobs",
+   "label": "Background Jobs & Scheduling"
+  },
+  {
+   "domain": "backend",
+   "key": "file-handling",
+   "label": "File & Media Handling"
+  },
+  {
+   "domain": "apis",
+   "key": "rest",
+   "label": "REST APIs"
+  },
+  {
+   "domain": "apis",
+   "key": "api-design",
+   "label": "API Design"
+  },
+  {
+   "domain": "apis",
+   "key": "graphql",
+   "label": "GraphQL"
+  },
+  {
+   "domain": "apis",
+   "key": "rpc",
+   "label": "RPC & gRPC"
+  },
+  {
+   "domain": "apis",
+   "key": "realtime",
+   "label": "Real-Time Communication"
+  },
+  {
+   "domain": "apis",
+   "key": "api-docs",
+   "label": "API Documentation & Contracts"
+  },
+  {
+   "domain": "apis",
+   "key": "api-integration",
+   "label": "Consuming & Integrating APIs"
+  },
+  {
+   "domain": "auth-security",
+   "key": "authentication",
+   "label": "Authentication"
+  },
+  {
+   "domain": "auth-security",
+   "key": "sessions-tokens",
+   "label": "Sessions & Tokens"
+  },
+  {
+   "domain": "auth-security",
+   "key": "oauth",
+   "label": "OAuth, OIDC & SSO"
+  },
+  {
+   "domain": "auth-security",
+   "key": "authorization",
+   "label": "Authorization & Access Control"
+  },
+  {
+   "domain": "auth-security",
+   "key": "crypto",
+   "label": "Passwords, Crypto & TLS"
+  },
+  {
+   "domain": "auth-security",
+   "key": "vulnerabilities",
+   "label": "Web Vulnerabilities (OWASP)"
+  },
+  {
+   "domain": "auth-security",
+   "key": "secure-practices",
+   "label": "Secure-by-Default Practices"
+  },
+  {
+   "domain": "databases",
+   "key": "relational",
+   "label": "Relational Databases"
+  },
+  {
+   "domain": "databases",
+   "key": "sql",
+   "label": "SQL"
+  },
+  {
+   "domain": "databases",
+   "key": "transactions",
+   "label": "Transactions & Integrity"
+  },
+  {
+   "domain": "databases",
+   "key": "nosql",
+   "label": "NoSQL Databases"
+  },
+  {
+   "domain": "databases",
+   "key": "orms",
+   "label": "ORMs & Query Builders"
+  },
+  {
+   "domain": "databases",
+   "key": "data-modeling",
+   "label": "Data Modeling & Migrations"
+  },
+  {
+   "domain": "databases",
+   "key": "caching",
+   "label": "Caching"
+  },
+  {
+   "domain": "databases",
+   "key": "search-storage",
+   "label": "Search & Object Storage"
+  },
+  {
+   "domain": "testing",
+   "key": "fundamentals",
+   "label": "Testing Fundamentals"
+  },
+  {
+   "domain": "testing",
+   "key": "unit",
+   "label": "Unit Testing"
+  },
+  {
+   "domain": "testing",
+   "key": "mocking",
+   "label": "Mocking & Test Doubles"
+  },
+  {
+   "domain": "testing",
+   "key": "integration",
+   "label": "Integration Testing"
+  },
+  {
+   "domain": "testing",
+   "key": "e2e",
+   "label": "End-to-End Testing"
+  },
+  {
+   "domain": "testing",
+   "key": "frontend-testing",
+   "label": "Frontend Testing"
+  },
+  {
+   "domain": "testing",
+   "key": "practices",
+   "label": "Testing Practices"
+  },
+  {
+   "domain": "testing",
+   "key": "quality-tooling",
+   "label": "Code-Quality Tooling"
+  },
+  {
+   "domain": "devops",
+   "key": "ci-cd",
+   "label": "CI/CD Pipelines"
+  },
+  {
+   "domain": "devops",
+   "key": "containers",
+   "label": "Containers"
+  },
+  {
+   "domain": "devops",
+   "key": "orchestration",
+   "label": "Orchestration & Scaling"
+  },
+  {
+   "domain": "devops",
+   "key": "hosting",
+   "label": "Hosting & PaaS Platforms"
+  },
+  {
+   "domain": "devops",
+   "key": "cloud",
+   "label": "Cloud Providers"
+  },
+  {
+   "domain": "devops",
+   "key": "serverless",
+   "label": "Serverless, Edge & BaaS"
+  },
+  {
+   "domain": "devops",
+   "key": "web-servers",
+   "label": "Web Servers & Networking"
+  },
+  {
+   "domain": "devops",
+   "key": "infra-config",
+   "label": "Infrastructure & Configuration"
+  },
+  {
+   "domain": "architecture",
+   "key": "clean-code",
+   "label": "Clean Code"
+  },
+  {
+   "domain": "architecture",
+   "key": "principles",
+   "label": "Design Principles"
+  },
+  {
+   "domain": "architecture",
+   "key": "patterns",
+   "label": "Design Patterns"
+  },
+  {
+   "domain": "architecture",
+   "key": "project-structure",
+   "label": "Project Structure"
+  },
+  {
+   "domain": "architecture",
+   "key": "app-architecture",
+   "label": "Application Architecture"
+  },
+  {
+   "domain": "architecture",
+   "key": "system-design",
+   "label": "System Design Basics"
+  },
+  {
+   "domain": "architecture",
+   "key": "refactoring",
+   "label": "Refactoring & Tech Debt"
+  },
+  {
+   "domain": "performance",
+   "key": "web-vitals",
+   "label": "Web Performance & Vitals"
+  },
+  {
+   "domain": "performance",
+   "key": "frontend-perf",
+   "label": "Frontend Optimization"
+  },
+  {
+   "domain": "performance",
+   "key": "backend-perf",
+   "label": "Backend Performance"
+  },
+  {
+   "domain": "performance",
+   "key": "caching-strategies",
+   "label": "Caching Strategies"
+  },
+  {
+   "domain": "performance",
+   "key": "scaling",
+   "label": "Scaling & Load"
+  },
+  {
+   "domain": "performance",
+   "key": "monitoring",
+   "label": "Monitoring & Metrics"
+  },
+  {
+   "domain": "performance",
+   "key": "logging-tracing",
+   "label": "Logging & Tracing"
+  },
+  {
+   "domain": "performance",
+   "key": "error-tracking",
+   "label": "Error Tracking"
+  },
+  {
+   "domain": "foundations",
+   "key": "data-structures",
+   "label": "Data Structures"
+  },
+  {
+   "domain": "foundations",
+   "key": "algorithms",
+   "label": "Algorithms"
+  },
+  {
+   "domain": "foundations",
+   "key": "complexity",
+   "label": "Complexity & Big-O"
+  },
+  {
+   "domain": "foundations",
+   "key": "networking",
+   "label": "Networking Basics"
+  },
+  {
+   "domain": "foundations",
+   "key": "concurrency",
+   "label": "Concurrency & Async"
+  },
+  {
+   "domain": "foundations",
+   "key": "problem-solving",
+   "label": "Problem Solving & Patterns"
+  },
+  {
+   "domain": "professional",
+   "key": "version-control",
+   "label": "Version Control (Git)"
+  },
+  {
+   "domain": "professional",
+   "key": "git-collaboration",
+   "label": "Git Collaboration & PRs"
+  },
+  {
+   "domain": "professional",
+   "key": "agile",
+   "label": "Agile & Process"
+  },
+  {
+   "domain": "professional",
+   "key": "documentation",
+   "label": "Documentation"
+  },
+  {
+   "domain": "professional",
+   "key": "communication",
+   "label": "Communication & Teamwork"
+  },
+  {
+   "domain": "professional",
+   "key": "career",
+   "label": "Career & Growth"
+  },
+  {
+   "domain": "professional",
+   "key": "ai-assisted",
+   "label": "AI-Assisted Development"
+  }
+ ]
+}

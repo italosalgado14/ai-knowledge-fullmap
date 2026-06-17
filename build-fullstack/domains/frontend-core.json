@@ -1,0 +1,866 @@
+{
+  "topics": [
+    {
+      "id": "frontend-core.document-structure",
+      "label": "Document Structure",
+      "subdomain": "html",
+      "importance": 3,
+      "desc": "The skeleton of every page — doctype, html, head, and body — that the browser parses into the DOM tree before rendering anything."
+    },
+    {
+      "id": "frontend-core.semantic-elements",
+      "label": "Semantic Elements",
+      "subdomain": "html",
+      "importance": 3,
+      "desc": "Meaning-carrying tags like header, nav, main, article, section, aside, and footer that convey structure to browsers, search engines, and assistive tech."
+    },
+    {
+      "id": "frontend-core.links-navigation",
+      "label": "Links & Navigation",
+      "subdomain": "html",
+      "importance": 2,
+      "desc": "Hyperlinks via the anchor element with href, target, rel (noopener/nofollow), and fragment/mailto/tel schemes that wire pages and resources together."
+    },
+    {
+      "id": "frontend-core.forms-inputs",
+      "label": "Forms & Input Types",
+      "subdomain": "html",
+      "importance": 3,
+      "desc": "The form element with typed inputs (email, number, date, file, range), select, textarea, label association, and built-in constraint validation attributes."
+    },
+    {
+      "id": "frontend-core.media-images",
+      "label": "Media & Images",
+      "subdomain": "html",
+      "importance": 2,
+      "desc": "Embedding content with img (alt, srcset, loading=lazy), picture for art direction, plus video, audio, canvas, and iframe elements."
+    },
+    {
+      "id": "frontend-core.metadata-seo",
+      "label": "Metadata & SEO Basics",
+      "subdomain": "html",
+      "importance": 2,
+      "desc": "Head-level signals — title, meta description, viewport, charset, Open Graph/Twitter cards, canonical links, and JSON-LD structured data — for sharing and search ranking."
+    },
+    {
+      "id": "frontend-core.html-validation",
+      "label": "Valid & Well-Formed HTML",
+      "subdomain": "html",
+      "importance": 1,
+      "desc": "Writing standards-conformant markup with proper nesting and required attributes, checked by the W3C validator and lint rules to avoid quirks-mode and parser surprises."
+    },
+    {
+      "id": "frontend-core.css-selectors",
+      "label": "CSS Selectors",
+      "subdomain": "css-fundamentals",
+      "importance": 3,
+      "desc": "Patterns that target elements — type, class, id, attribute, combinators (descendant, child, sibling), and pseudo-classes/elements like :hover and ::before."
+    },
+    {
+      "id": "frontend-core.cascade-specificity",
+      "label": "Cascade & Specificity",
+      "subdomain": "css-fundamentals",
+      "importance": 3,
+      "desc": "The algorithm that resolves conflicting rules by origin, specificity weight (id vs class vs type), source order, and !important overrides."
+    },
+    {
+      "id": "frontend-core.box-model",
+      "label": "Box Model",
+      "subdomain": "css-fundamentals",
+      "importance": 3,
+      "desc": "Every element as nested content, padding, border, and margin boxes, with box-sizing: border-box controlling whether dimensions include padding and border."
+    },
+    {
+      "id": "frontend-core.css-units",
+      "label": "CSS Units",
+      "subdomain": "css-fundamentals",
+      "importance": 2,
+      "desc": "Absolute and relative length units — px, rem, em, %, vh/vw, ch, fr, and clamp()/calc() expressions — that scale layout with context and viewport."
+    },
+    {
+      "id": "frontend-core.colors-backgrounds",
+      "label": "Colors & Backgrounds",
+      "subdomain": "css-fundamentals",
+      "importance": 2,
+      "desc": "Color specification via hex, rgb(), hsl(), and oklch(), plus background images, gradients, opacity, and the alpha channel for layered visuals."
+    },
+    {
+      "id": "frontend-core.typography",
+      "label": "Typography",
+      "subdomain": "css-fundamentals",
+      "importance": 2,
+      "desc": "Styling text with font-family stacks, @font-face/web fonts, font-size, line-height, font-weight, letter-spacing, and text-align for readable type."
+    },
+    {
+      "id": "frontend-core.display-positioning",
+      "label": "Display & Positioning",
+      "subdomain": "css-layout",
+      "importance": 2,
+      "desc": "Box behavior via display (block, inline, inline-block, none) and the position scheme — static, relative, absolute, fixed, and sticky with offsets and z-index."
+    },
+    {
+      "id": "frontend-core.flexbox",
+      "label": "Flexbox",
+      "subdomain": "css-layout",
+      "importance": 3,
+      "desc": "One-dimensional layout distributing space along a main and cross axis with justify-content, align-items, flex-grow/shrink/basis, and wrapping."
+    },
+    {
+      "id": "frontend-core.css-grid",
+      "label": "CSS Grid",
+      "subdomain": "css-layout",
+      "importance": 3,
+      "desc": "Two-dimensional layout with explicit rows/columns, fr units, minmax(), template areas, and auto-placement for full page and component grids."
+    },
+    {
+      "id": "frontend-core.responsive-design",
+      "label": "Responsive Design",
+      "subdomain": "css-layout",
+      "importance": 3,
+      "desc": "Building one layout that adapts to any screen using fluid grids, flexible images, and breakpoints rather than fixed-width or device-specific pages."
+    },
+    {
+      "id": "frontend-core.media-queries",
+      "label": "Media Queries",
+      "subdomain": "css-layout",
+      "importance": 3,
+      "desc": "Conditional CSS via @media that responds to viewport width, orientation, prefers-color-scheme, prefers-reduced-motion, and pointer capabilities."
+    },
+    {
+      "id": "frontend-core.mobile-first",
+      "label": "Mobile-First",
+      "subdomain": "css-layout",
+      "importance": 1,
+      "desc": "Authoring base styles for small screens and progressively enhancing with min-width media queries, improving performance and forcing content prioritization."
+    },
+    {
+      "id": "frontend-core.container-queries",
+      "label": "Container Queries",
+      "subdomain": "css-layout",
+      "importance": 1,
+      "desc": "Styling a component by the size of its own container via @container and container-type, enabling truly reusable, context-aware responsive components."
+    },
+    {
+      "id": "frontend-core.transitions",
+      "label": "Transitions",
+      "subdomain": "css-modern",
+      "importance": 2,
+      "desc": "Smoothly animating property changes between states with transition-property, duration, and timing-function (ease, cubic-bezier) triggered by state like :hover."
+    },
+    {
+      "id": "frontend-core.animations",
+      "label": "Animations",
+      "subdomain": "css-modern",
+      "importance": 2,
+      "desc": "Multi-step motion defined with @keyframes and the animation shorthand controlling iteration, direction, delay, and fill-mode independent of user interaction."
+    },
+    {
+      "id": "frontend-core.transforms",
+      "label": "Transforms",
+      "subdomain": "css-modern",
+      "importance": 1,
+      "desc": "GPU-accelerated translate, rotate, scale, and skew in 2D/3D via the transform property, used for movement and effects without triggering layout."
+    },
+    {
+      "id": "frontend-core.custom-properties",
+      "label": "Custom Properties",
+      "subdomain": "css-modern",
+      "importance": 2,
+      "desc": "Native CSS variables (--name) read with var(), cascading and runtime-updatable from JavaScript — the foundation of theming and design tokens."
+    },
+    {
+      "id": "frontend-core.preprocessors",
+      "label": "CSS Preprocessors",
+      "subdomain": "css-modern",
+      "importance": 2,
+      "desc": "Authoring CSS with extra power — Sass/SCSS or Less adding variables, nesting, mixins, and partials, compiled to plain stylesheets at build time."
+    },
+    {
+      "id": "frontend-core.css-methodologies",
+      "label": "CSS Methodologies",
+      "subdomain": "css-modern",
+      "importance": 1,
+      "desc": "Naming and organization conventions for scalable CSS — BEM, OOCSS, SMACSS, and ITCSS — that fight specificity wars and clarify component boundaries."
+    },
+    {
+      "id": "frontend-core.utility-first-css",
+      "label": "Utility-First CSS",
+      "subdomain": "css-modern",
+      "importance": 2,
+      "desc": "Composing UI from small single-purpose classes (as popularized by Tailwind CSS) instead of bespoke semantic class names, trading markup verbosity for speed."
+    },
+    {
+      "id": "frontend-core.data-types",
+      "label": "Data Types & Coercion",
+      "subdomain": "javascript",
+      "importance": 3,
+      "desc": "JavaScript's primitives (string, number, boolean, null, undefined, symbol, bigint) versus objects, with implicit type coercion and strict (===) versus loose equality."
+    },
+    {
+      "id": "frontend-core.variables-scope",
+      "label": "Variables & Scope",
+      "subdomain": "javascript",
+      "importance": 3,
+      "desc": "Declaring bindings with let, const, and legacy var, governed by block versus function scope, the temporal dead zone, and hoisting of declarations."
+    },
+    {
+      "id": "frontend-core.closures",
+      "label": "Closures",
+      "subdomain": "javascript",
+      "importance": 3,
+      "desc": "Functions capturing their lexical environment so they retain access to enclosing variables after that scope returns, powering callbacks, modules, and currying."
+    },
+    {
+      "id": "frontend-core.this-prototypes",
+      "label": "this & Prototypes",
+      "subdomain": "javascript",
+      "importance": 1,
+      "desc": "Dynamic this binding (call/apply/bind, arrow lexical this) and prototypal inheritance via the prototype chain underlying class syntax and method lookup."
+    },
+    {
+      "id": "frontend-core.es6-features",
+      "label": "ES6+ Features",
+      "subdomain": "javascript",
+      "importance": 3,
+      "desc": "Modern syntax that defines idiomatic JS — arrow functions, destructuring, spread/rest, template literals, array helpers (map/filter/reduce), optional chaining, and nullish coalescing."
+    },
+    {
+      "id": "frontend-core.async-promises",
+      "label": "Promises & async/await",
+      "subdomain": "javascript",
+      "importance": 3,
+      "desc": "Modeling deferred results with Promises (then/catch, Promise.all/race) and async/await syntax, with rejection and error handling via try/catch and .catch for asynchronous flows."
+    },
+    {
+      "id": "frontend-core.event-loop",
+      "label": "Event Loop",
+      "subdomain": "javascript",
+      "importance": 1,
+      "desc": "The single-threaded concurrency model — call stack, task and microtask queues, and non-blocking I/O — that schedules callbacks, promises, and timers like setTimeout."
+    },
+    {
+      "id": "frontend-core.es-modules",
+      "label": "ES Modules",
+      "subdomain": "javascript",
+      "importance": 2,
+      "desc": "The standard module system using import/export with static analysis enabling tree-shaking, plus dynamic import() and the legacy CommonJS require contrast."
+    },
+    {
+      "id": "frontend-core.dom-api",
+      "label": "DOM API & Manipulation",
+      "subdomain": "js-browser",
+      "importance": 3,
+      "desc": "Reading and mutating the live document tree with querySelector, createElement, textContent, classList, and node insertion/removal, the model Web Components and frameworks build on."
+    },
+    {
+      "id": "frontend-core.events-delegation",
+      "label": "Events & Delegation",
+      "subdomain": "js-browser",
+      "importance": 3,
+      "desc": "Handling user interaction via addEventListener, the capture/bubble phases, the event object, preventDefault, and delegation by listening on a common ancestor."
+    },
+    {
+      "id": "frontend-core.fetch-xhr",
+      "label": "Fetch & AJAX",
+      "subdomain": "js-browser",
+      "importance": 2,
+      "desc": "Making HTTP requests from the browser with the promise-based fetch API (Request/Response, JSON parsing, AbortController) succeeding the older XMLHttpRequest."
+    },
+    {
+      "id": "frontend-core.web-storage",
+      "label": "Web Storage",
+      "subdomain": "js-browser",
+      "importance": 1,
+      "desc": "Persisting key-value data client-side with localStorage and sessionStorage, plus cookies and the indexed, async IndexedDB for larger structured data."
+    },
+    {
+      "id": "frontend-core.browser-apis",
+      "label": "Browser Web APIs",
+      "subdomain": "js-browser",
+      "importance": 1,
+      "desc": "Platform capabilities exposed to scripts — History/Location, Geolocation, Clipboard, Intersection/Resize Observer, and the Web Animations API."
+    },
+    {
+      "id": "frontend-core.typescript",
+      "label": "TypeScript",
+      "subdomain": "typescript",
+      "importance": 2,
+      "desc": "A typed superset of JavaScript compiling to plain JS, adding static type checking that catches errors at build time and powers rich editor tooling."
+    },
+    {
+      "id": "frontend-core.ts-basic-types",
+      "label": "Basic Types & Annotations",
+      "subdomain": "typescript",
+      "importance": 2,
+      "desc": "Annotating variables, parameters, and returns with primitives, arrays, tuples, enums, any/unknown/never, and literal types to constrain values."
+    },
+    {
+      "id": "frontend-core.ts-interfaces-types",
+      "label": "Interfaces & Type Aliases",
+      "subdomain": "typescript",
+      "importance": 2,
+      "desc": "Describing object shapes and contracts with interface and type, supporting optional/readonly members, extension, and intersection composition."
+    },
+    {
+      "id": "frontend-core.ts-unions-narrowing",
+      "label": "Unions & Narrowing",
+      "subdomain": "typescript",
+      "importance": 2,
+      "desc": "Modeling alternatives with union and discriminated-union types, then refining them via typeof, instanceof, in, and custom type-guard predicates."
+    },
+    {
+      "id": "frontend-core.ts-generics",
+      "label": "Generics",
+      "subdomain": "typescript",
+      "importance": 2,
+      "desc": "Writing reusable type-parameterized functions, classes, and types with constraints (extends) and defaults so code stays type-safe across many value types."
+    },
+    {
+      "id": "frontend-core.ts-structural-typing",
+      "label": "Structural Typing",
+      "subdomain": "typescript",
+      "importance": 1,
+      "desc": "TypeScript's duck-typed compatibility where shape matters more than declared name, contrasted with nominal typing and refined by utility types like Partial and Pick."
+    },
+    {
+      "id": "frontend-core.ts-config-tooling",
+      "label": "tsconfig & Compiler",
+      "subdomain": "typescript",
+      "importance": 1,
+      "desc": "Configuring the tsc compiler through tsconfig.json — target, module, strict mode, paths, and lib — and declaration files (.d.ts) for typing JS libraries."
+    },
+    {
+      "id": "frontend-core.a11y-fundamentals",
+      "label": "Accessibility Fundamentals",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "Designing so people with disabilities can use the web, guided by the POUR principles (perceivable, operable, understandable, robust) and inclusive defaults."
+    },
+    {
+      "id": "frontend-core.wcag-standards",
+      "label": "WCAG Standards",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "The Web Content Accessibility Guidelines success criteria and conformance levels (A, AA, AAA) that define legally referenced, testable accessibility requirements."
+    },
+    {
+      "id": "frontend-core.semantic-landmarks",
+      "label": "Semantic Landmarks",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "Using native semantic HTML and landmark roles (banner, navigation, main, contentinfo) plus a logical heading order so assistive tech can map page regions."
+    },
+    {
+      "id": "frontend-core.aria",
+      "label": "ARIA",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "Accessible Rich Internet Applications attributes — roles, states, and aria-* properties — that expose custom widgets to assistive tech when native HTML falls short."
+    },
+    {
+      "id": "frontend-core.keyboard-navigation",
+      "label": "Keyboard Navigation",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "Ensuring everything works without a mouse via logical tab order, tabindex, visible focus indicators, focus trapping in dialogs, and skip links."
+    },
+    {
+      "id": "frontend-core.screen-readers",
+      "label": "Screen Readers",
+      "subdomain": "accessibility",
+      "importance": 1,
+      "desc": "Testing with assistive software like NVDA, JAWS, and VoiceOver that narrates the accessibility tree, including alt text, labels, and live-region announcements."
+    },
+    {
+      "id": "frontend-core.color-contrast",
+      "label": "Color Contrast",
+      "subdomain": "accessibility",
+      "importance": 2,
+      "desc": "Ensuring text and UI meet WCAG contrast ratios (4.5:1 for body text) and never relying on color alone to convey meaning, verified with contrast checkers."
+    },
+    {
+      "id": "frontend-core.a11y-testing",
+      "label": "Accessibility Testing",
+      "subdomain": "accessibility",
+      "importance": 1,
+      "desc": "Auditing accessibility with automated tools (axe, Lighthouse, WAVE), linting (eslint-plugin-jsx-a11y), and manual keyboard and screen-reader walkthroughs."
+    }
+  ],
+  "edges": [
+    {
+      "source": "frontend-core.document-structure",
+      "target": "frontend-core.semantic-elements",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.document-structure",
+      "target": "frontend-core.metadata-seo",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.semantic-elements",
+      "target": "frontend-core.semantic-landmarks",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.semantic-elements",
+      "target": "frontend-core.forms-inputs",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.forms-inputs",
+      "target": "frontend-core.html-validation",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.document-structure",
+      "target": "frontend-core.html-validation",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.media-images",
+      "target": "frontend-core.metadata-seo",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.semantic-elements",
+      "target": "frontend-core.metadata-seo",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.media-images",
+      "target": "frontend-core.color-contrast",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.document-structure",
+      "target": "frontend-core.css-selectors",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.css-selectors",
+      "target": "frontend-core.cascade-specificity",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.css-selectors",
+      "target": "frontend-core.box-model",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.box-model",
+      "target": "frontend-core.css-units",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-units",
+      "target": "frontend-core.typography",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.colors-backgrounds",
+      "target": "frontend-core.typography",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-selectors",
+      "target": "frontend-core.css-methodologies",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.cascade-specificity",
+      "target": "frontend-core.css-methodologies",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.colors-backgrounds",
+      "target": "frontend-core.color-contrast",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.box-model",
+      "target": "frontend-core.display-positioning",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.display-positioning",
+      "target": "frontend-core.flexbox",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.display-positioning",
+      "target": "frontend-core.css-grid",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.flexbox",
+      "target": "frontend-core.css-grid",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-units",
+      "target": "frontend-core.css-grid",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.flexbox",
+      "target": "frontend-core.responsive-design",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-grid",
+      "target": "frontend-core.responsive-design",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.media-queries",
+      "target": "frontend-core.responsive-design",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.responsive-design",
+      "target": "frontend-core.mobile-first",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.media-queries",
+      "target": "frontend-core.mobile-first",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.media-queries",
+      "target": "frontend-core.container-queries",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.responsive-design",
+      "target": "frontend-core.container-queries",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-units",
+      "target": "frontend-core.responsive-design",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.media-images",
+      "target": "frontend-core.responsive-design",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.display-positioning",
+      "target": "frontend-core.transforms",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.transitions",
+      "target": "frontend-core.animations",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.transforms",
+      "target": "frontend-core.transitions",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.transforms",
+      "target": "frontend-core.animations",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.media-queries",
+      "target": "frontend-core.animations",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.css-units",
+      "target": "frontend-core.custom-properties",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.colors-backgrounds",
+      "target": "frontend-core.custom-properties",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.custom-properties",
+      "target": "frontend-core.preprocessors",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.cascade-specificity",
+      "target": "frontend-core.preprocessors",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.css-methodologies",
+      "target": "frontend-core.utility-first-css",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.utility-first-css",
+      "target": "frontend-core.custom-properties",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.custom-properties",
+      "target": "frontend-core.dom-api",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.data-types",
+      "target": "frontend-core.variables-scope",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.variables-scope",
+      "target": "frontend-core.closures",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.variables-scope",
+      "target": "frontend-core.this-prototypes",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.closures",
+      "target": "frontend-core.this-prototypes",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.data-types",
+      "target": "frontend-core.es6-features",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.es6-features",
+      "target": "frontend-core.async-promises",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.async-promises",
+      "target": "frontend-core.event-loop",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.event-loop",
+      "target": "frontend-core.async-promises",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.es6-features",
+      "target": "frontend-core.es-modules",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.closures",
+      "target": "frontend-core.es-modules",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.es6-features",
+      "target": "frontend-core.typescript",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.document-structure",
+      "target": "frontend-core.dom-api",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.variables-scope",
+      "target": "frontend-core.dom-api",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.dom-api",
+      "target": "frontend-core.events-delegation",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.closures",
+      "target": "frontend-core.events-delegation",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.async-promises",
+      "target": "frontend-core.fetch-xhr",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.fetch-xhr",
+      "target": "frontend-core.web-storage",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.dom-api",
+      "target": "frontend-core.browser-apis",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.events-delegation",
+      "target": "frontend-core.browser-apis",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.typescript",
+      "target": "frontend-core.ts-basic-types",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.ts-basic-types",
+      "target": "frontend-core.ts-interfaces-types",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.ts-basic-types",
+      "target": "frontend-core.ts-unions-narrowing",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.ts-interfaces-types",
+      "target": "frontend-core.ts-generics",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.ts-unions-narrowing",
+      "target": "frontend-core.ts-generics",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.ts-interfaces-types",
+      "target": "frontend-core.ts-structural-typing",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.data-types",
+      "target": "frontend-core.ts-basic-types",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.typescript",
+      "target": "frontend-core.ts-config-tooling",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.es-modules",
+      "target": "frontend-core.ts-config-tooling",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.a11y-fundamentals",
+      "target": "frontend-core.wcag-standards",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.semantic-elements",
+      "target": "frontend-core.semantic-landmarks",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.a11y-fundamentals",
+      "target": "frontend-core.semantic-landmarks",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.semantic-landmarks",
+      "target": "frontend-core.aria",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.a11y-fundamentals",
+      "target": "frontend-core.aria",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.a11y-fundamentals",
+      "target": "frontend-core.keyboard-navigation",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.events-delegation",
+      "target": "frontend-core.keyboard-navigation",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.aria",
+      "target": "frontend-core.screen-readers",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.semantic-landmarks",
+      "target": "frontend-core.screen-readers",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.wcag-standards",
+      "target": "frontend-core.color-contrast",
+      "type": "prereq"
+    },
+    {
+      "source": "frontend-core.forms-inputs",
+      "target": "frontend-core.keyboard-navigation",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.wcag-standards",
+      "target": "frontend-core.a11y-testing",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.keyboard-navigation",
+      "target": "frontend-core.a11y-testing",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.aria",
+      "target": "frontend-core.a11y-testing",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.es6-features",
+      "target": "frontend-core.dom-api",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.fetch-xhr",
+      "target": "frontend-core.browser-apis",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.typography",
+      "target": "frontend-core.custom-properties",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.links-navigation",
+      "target": "frontend-core.forms-inputs",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.links-navigation",
+      "target": "frontend-core.metadata-seo",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.web-storage",
+      "target": "frontend-core.browser-apis",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.web-storage",
+      "target": "frontend-core.dom-api",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.ts-structural-typing",
+      "target": "frontend-core.ts-generics",
+      "type": "related"
+    },
+    {
+      "source": "frontend-core.ts-structural-typing",
+      "target": "frontend-core.ts-basic-types",
+      "type": "related"
+    }
+  ]
+}

@@ -1,15 +1,17 @@
-"""Software Engineering Knowledge Map — assembler.
+"""Full-Stack Developer Map — assembler.
 
 Merges the taxonomy skeleton (domains + subdomains) with the per-domain
-topic/edge files in build/domains/*.json and the cross-domain bridge edges in
-build/cross_edges.json, then injects the resulting graph into a clone of the
-AI/ML knowledge-map renderer to produce software-engineering-map.html.
+topic/edge files in build-fullstack/domains/*.json and the cross-domain bridge
+edges in build-fullstack/cross_edges.json, then injects the resulting graph into
+a clone of the AI/ML knowledge-map renderer to produce
+fullstack-developer-map.html.
 
 The renderer (HTML/CSS/JS) is reused verbatim from ai-knowledge-map.html — only
-the embedded data, the page title, the help text and the localStorage key are
-swapped, so the two maps look and behave identically but keep separate progress.
+the embedded data, the page title, the subline, the help text, the localStorage
+key and the two header cross-links are swapped, so all three maps look and behave
+identically but keep separate progress.
 
-Usage:  python3 build/assemble.py
+Usage:  python3 build-fullstack/assemble.py
 """
 import json, os, sys
 
@@ -17,30 +19,29 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DOMAINS_DIR = os.path.join(HERE, "domains")
 TEMPLATE = os.path.join(ROOT, "ai-knowledge-map.html")
-OUTPUT = os.path.join(ROOT, "software-engineering-map.html")
+OUTPUT = os.path.join(ROOT, "fullstack-developer-map.html")
 CROSS_EDGES = os.path.join(HERE, "cross_edges.json")
 
-PAGE_TITLE = "The Software Engineering Knowledge Map"
-FAM_KEY_NEW = "swemap-familiarity-v1"
-SUBLINE_NEW = "the foundations beneath every stack"
+PAGE_TITLE = "The Full-Stack Developer Map"
+FAM_KEY_NEW = "fsmap-familiarity-v1"
+SUBLINE_NEW = "the working developer's whole stack"
 HELP_PARAGRAPH = (
-    "<p>This is a big-picture atlas of the <b>durable foundations of software "
-    "engineering</b> — the languages, data structures, algorithms, computer "
-    "architecture, operating systems, networking, databases, distributed "
-    "systems, software design, security, testing, performance and engineering "
-    "practice that sit <i>beneath</i> every specialization. It is meant to be "
-    "<b>tool-agnostic and broadly applicable</b> — the concepts that stay true "
-    "whether you build full-stack web apps, AI/ML systems, mobile or desktop "
-    "apps, or low-level systems, as frameworks come and go. The goal is to see "
-    "the <b>whole territory at once</b> and mark <b>what you know vs. what you "
-    "don't.</b> For the concrete, role-specific stacks, see the sibling "
-    "<b>Full-Stack Developer</b> and <b>AI / ML</b> maps.</p>"
+    "<p>This is a focused, practical map of the <b>full-stack web developer</b> "
+    "role — from how the web works, through HTML/CSS/JS and frontend frameworks, "
+    "the backend, APIs, auth &amp; security, databases, testing, DevOps &amp; "
+    "deployment, architecture and performance, down to the CS foundations and "
+    "collaboration skills you lean on daily. It is a <b>hybrid</b> view: durable "
+    "concepts as the backbone, with the concrete tools you'd actually reach for "
+    "(React, Node, PostgreSQL, Docker, …) named throughout. The goal is to see "
+    "the <b>whole stack at once</b> and mark <b>what you know vs. what you "
+    "don't.</b> For the tool-agnostic theory underneath, see the sibling "
+    "<b>Software Engineering</b> map; for the ML side, the <b>AI / ML</b> map.</p>"
 )
 
 # Anchors that exist verbatim in ai-knowledge-map.html.
 OLD_TITLE = "The AI / ML Knowledge Map"
 OLD_FAM_KEY = "const FAM_KEY = 'aimap-familiarity-v1';"
-NEW_FAM_KEY = "const FAM_KEY = 'swemap-familiarity-v1';"
+NEW_FAM_KEY = "const FAM_KEY = 'fsmap-familiarity-v1';"
 OLD_HELP_PARAGRAPH = (
     "<p>This is a big-picture atlas of artificial intelligence — from the "
     "mathematics and statistics underneath, through classical ML, deep learning, "
@@ -52,14 +53,12 @@ OLD_HELP_PARAGRAPH = (
 DATA_OPEN = '<script id="aimap-data" type="application/json">'
 DATA_CLOSE = "</script>"
 
-# Cross-link in the header: the template (AI map) points at the SWE map; on the
-# generated SWE page we flip it to point back at the AI map.
 # On the AI template, xmap1 -> SWE map and xmap2 -> Full-Stack map. On the
-# generated SWE page we flip xmap1 to point back at the AI map and leave the
-# Full-Stack link (xmap2) in place.
-OLD_XLINK_HREF = 'href="software-engineering-map.html"'
+# generated Full-Stack page we leave the Software-Engineering link (xmap1) in
+# place and flip the self-link (xmap2) to point at the AI map.
+OLD_XLINK_HREF = 'href="fullstack-developer-map.html"'
 NEW_XLINK_HREF = 'href="ai-knowledge-map.html"'
-OLD_XLINK_TEXT = ">⇄ Software Engineering</a>"
+OLD_XLINK_TEXT = ">⇄ Full-Stack Developer</a>"
 NEW_XLINK_TEXT = ">⇄ AI / ML Knowledge</a>"
 OLD_SUBLINE = ">map your terra incognita</span>"
 NEW_SUBLINE = ">" + SUBLINE_NEW + "</span>"
@@ -191,7 +190,7 @@ def inject(template_text, data):
     n_title = out.count(OLD_TITLE)
     out = out.replace(OLD_TITLE, PAGE_TITLE)
 
-    # --- swap localStorage key so progress is independent of the AI map ---
+    # --- swap localStorage key so progress is independent of the other maps ---
     if OLD_FAM_KEY not in out:
         raise SystemExit("FAM_KEY anchor not found in template")
     out = out.replace(OLD_FAM_KEY, NEW_FAM_KEY)
@@ -201,7 +200,7 @@ def inject(template_text, data):
         raise SystemExit("help paragraph anchor not found in template")
     out = out.replace(OLD_HELP_PARAGRAPH, HELP_PARAGRAPH)
 
-    # --- flip the header cross-link to point back at the AI map ---
+    # --- flip the self cross-link (xmap2) to point at the AI map ---
     if OLD_XLINK_HREF not in out or OLD_XLINK_TEXT not in out:
         raise SystemExit("header cross-link anchor not found in template")
     out = out.replace(OLD_XLINK_HREF, NEW_XLINK_HREF)

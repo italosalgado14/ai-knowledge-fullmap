@@ -1,0 +1,190 @@
+{
+  "topics": [
+    { "id": "databases.relational-model", "label": "Relational Model", "subdomain": "relational", "importance": 3, "desc": "The data model based on relations (tables) of tuples grounded in set theory and relational algebra, where data is organized declaratively and queried by content rather than pointers." },
+    { "id": "databases.tables-rows-columns", "label": "Tables, Rows & Columns", "subdomain": "relational", "importance": 3, "desc": "The concrete building blocks of a relational schema: tables holding rows (records) of typed columns (fields), the structure every relational database like PostgreSQL stores data in." },
+    { "id": "databases.primary-foreign-keys", "label": "Primary & Foreign Keys", "subdomain": "relational", "importance": 3, "desc": "Primary keys (natural or surrogate auto-increment or UUID) uniquely identify each row, while foreign keys reference another table's primary key to link records and enforce referential integrity." },
+    { "id": "databases.relationships", "label": "Table Relationships", "subdomain": "relational", "importance": 3, "desc": "How tables connect via keys into one-to-one, one-to-many, and many-to-many associations, with junction (join) tables resolving the latter into linkable rows." },
+    { "id": "databases.normalization", "label": "Normalization", "subdomain": "relational", "importance": 2, "desc": "Structuring tables through normal forms (1NF, 2NF, 3NF, BCNF) to eliminate redundancy and update anomalies by decomposing data, balanced against deliberate denormalization for read speed." },
+    { "id": "databases.postgresql", "label": "PostgreSQL", "subdomain": "relational", "importance": 3, "desc": "The feature-rich open-source relational database favored for correctness and extensibility, with JSONB, full-text search, window functions, CTEs, and rich indexing and extensions like PostGIS." },
+    { "id": "databases.mysql-mariadb", "label": "MySQL & MariaDB", "subdomain": "relational", "importance": 3, "desc": "The widely deployed open-source relational database (and its MariaDB fork) powering much of the web, with the InnoDB storage engine providing ACID transactions and foreign keys." },
+    { "id": "databases.sqlite", "label": "SQLite", "subdomain": "relational", "importance": 1, "desc": "A serverless, zero-config embedded relational database stored in a single file, ideal for local apps, mobile, tests, and prototypes, and increasingly used at the edge." },
+
+    { "id": "databases.sql-language", "label": "SQL Language", "subdomain": "sql", "importance": 3, "desc": "The declarative Structured Query Language standard for relational data, split into DDL (CREATE, ALTER), DML (SELECT, INSERT), and DCL, with dialect differences across engines." },
+    { "id": "databases.select-crud", "label": "SELECT, CRUD & WHERE", "subdomain": "sql", "importance": 3, "desc": "The core statements SELECT, INSERT, UPDATE, and DELETE that read and mutate rows, with WHERE predicates (comparisons, LIKE, IN, BETWEEN, IS NULL) deciding which records each query touches." },
+    { "id": "databases.joins", "label": "JOINs", "subdomain": "sql", "importance": 3, "desc": "Combining rows across tables on matching columns via INNER, LEFT/RIGHT/FULL OUTER, and CROSS joins, the central mechanism for querying normalized relational data." },
+    { "id": "databases.group-by-aggregation", "label": "GROUP BY & Aggregation", "subdomain": "sql", "importance": 3, "desc": "Collapsing rows into summary groups with COUNT, SUM, AVG, MIN, and MAX, filtered by HAVING, to compute reports and analytics directly in the database." },
+    { "id": "databases.subqueries-ctes", "label": "Subqueries & CTEs", "subdomain": "sql", "importance": 1, "desc": "Nested SELECTs in WHERE, FROM, or SELECT (including correlated subqueries and EXISTS) and Common Table Expressions (WITH) that name intermediate results for readability and recursive queries." },
+    { "id": "databases.views", "label": "Views", "subdomain": "sql", "importance": 1, "desc": "Named, stored queries that present a virtual table for abstraction and access control, with materialized views caching results on disk for expensive aggregations." },
+    { "id": "databases.window-functions", "label": "Window Functions", "subdomain": "sql", "importance": 2, "desc": "Calculations across a set of rows related to the current row using OVER with PARTITION BY, enabling running totals, rankings (ROW_NUMBER, RANK), and moving averages without collapsing rows." },
+    { "id": "databases.indexes", "label": "Indexes & Query Plans", "subdomain": "sql", "importance": 3, "desc": "B-tree and other indexes that speed lookups and sorts at a write cost (composite, partial, unique, covering), read through EXPLAIN/EXPLAIN ANALYZE plans to find scans and missing indexes." },
+
+    { "id": "databases.acid", "label": "ACID Properties", "subdomain": "transactions", "importance": 3, "desc": "The guarantees of reliable transactions: Atomicity (all-or-nothing), Consistency, Isolation (concurrent safety), and Durability (committed data survives crashes), the bedrock of relational reliability." },
+    { "id": "databases.transactions", "label": "Transactions", "subdomain": "transactions", "importance": 3, "desc": "Grouping multiple statements into one atomic unit with BEGIN, COMMIT, and ROLLBACK so partial failures leave no half-finished state, essential for operations like money transfers." },
+    { "id": "databases.isolation-levels", "label": "Isolation Levels", "subdomain": "transactions", "importance": 2, "desc": "The trade-off between concurrency and correctness across Read Uncommitted, Read Committed, Repeatable Read, and Serializable, defined by which anomalies (dirty, non-repeatable, phantom reads) they permit." },
+    { "id": "databases.locking", "label": "Locking & Deadlocks", "subdomain": "transactions", "importance": 2, "desc": "Coordinating concurrent access via shared and exclusive locks and multi-version concurrency control (MVCC), and the deadlocks that arise when transactions wait on each other, detected and broken by aborting a victim." },
+    { "id": "databases.constraints", "label": "Constraints", "subdomain": "transactions", "importance": 3, "desc": "Declarative rules the database enforces on data: NOT NULL, UNIQUE, CHECK, and DEFAULT, pushing validation into the schema so invalid rows can never be stored." },
+    { "id": "databases.referential-integrity", "label": "Referential Integrity", "subdomain": "transactions", "importance": 2, "desc": "Guaranteeing foreign keys always point to existing rows, with ON DELETE and ON UPDATE actions like CASCADE, RESTRICT, and SET NULL governing what happens to dependents." },
+
+    { "id": "databases.nosql-overview", "label": "When to Use NoSQL", "subdomain": "nosql", "importance": 3, "desc": "The rationale for non-relational stores: flexible schemas, horizontal scale, and access-pattern-driven design, weighed against losing joins and strong consistency that relational engines provide." },
+    { "id": "databases.document-stores", "label": "Document Stores", "subdomain": "nosql", "importance": 3, "desc": "Schema-flexible databases storing self-contained JSON-like documents, led by MongoDB, that suit nested, evolving data and let you query without joins by embedding related data." },
+    { "id": "databases.key-value-stores", "label": "Key-Value Stores", "subdomain": "nosql", "importance": 3, "desc": "The simplest model mapping keys to opaque values for extreme speed and scale, exemplified by Redis in memory and AWS DynamoDB as a managed store, ideal for caches and sessions." },
+    { "id": "databases.wide-column", "label": "Wide-Column Stores", "subdomain": "nosql", "importance": 1, "desc": "Column-family databases like Apache Cassandra and HBase that store sparse, partitioned rows for massive write throughput and linear scale across clusters, tuned to known query patterns." },
+    { "id": "databases.graph-databases", "label": "Graph & Vector DBs", "subdomain": "nosql", "importance": 2, "desc": "Stores built around relationships and similarity: Neo4j with its Cypher language for traversing node-and-edge graphs, and vector databases (Pinecone, pgvector, Qdrant) for embedding search powering RAG." },
+    { "id": "databases.base-eventual-consistency", "label": "BASE, CAP & Consistency", "subdomain": "nosql", "importance": 2, "desc": "The distributed-store trade-off: BASE (Basically Available, Soft state, Eventually consistent) versus ACID, and the CAP theorem forcing a choice between consistency and availability under network partitions." },
+
+    { "id": "databases.orm-concept", "label": "ORM Concept", "subdomain": "orms", "importance": 3, "desc": "Object-Relational Mapping that bridges application objects and relational rows, generating SQL from method calls, with the impedance-mismatch trade-offs and leaky abstractions it introduces." },
+    { "id": "databases.js-orms", "label": "JavaScript ORMs", "subdomain": "orms", "importance": 3, "desc": "The TypeScript and Node ecosystem of data mappers: Prisma's schema-first client, plus TypeORM, Sequelize, and the lightweight SQL-like Drizzle, that model tables as typed objects." },
+    { "id": "databases.other-orms", "label": "Backend Language ORMs", "subdomain": "orms", "importance": 1, "desc": "Mature ORMs across other stacks: Python's SQLAlchemy, Ruby on Rails' ActiveRecord, Java's Hibernate/JPA, and Django's ORM, each encoding the framework's data-access conventions." },
+    { "id": "databases.query-builders", "label": "Query Builders", "subdomain": "orms", "importance": 1, "desc": "A middle ground between raw SQL and full ORMs, like Knex.js, that compose queries with chainable, type-safe method calls while staying close to the underlying SQL." },
+    { "id": "databases.raw-sql-vs-orm", "label": "Raw SQL vs ORM", "subdomain": "orms", "importance": 1, "desc": "The trade-off between ORM productivity and portability versus hand-written SQL's control and performance, including when to drop to raw queries for complex reports or tuning." },
+    { "id": "databases.n-plus-one", "label": "N+1 & Loading Strategy", "subdomain": "orms", "importance": 3, "desc": "The classic ORM trap where lazy loading fires one extra query per item in a loop, versus eager loading that fetches relations upfront with a join or batched dataloader to fix it." },
+
+    { "id": "databases.schema-design", "label": "Schema Design", "subdomain": "data-modeling", "importance": 3, "desc": "Deciding the tables, columns, types, keys, and constraints that represent a domain, balancing normalization, query patterns, and future change into a workable database structure." },
+    { "id": "databases.er-modeling", "label": "ER Modeling", "subdomain": "data-modeling", "importance": 1, "desc": "Entity-Relationship modeling that diagrams entities, attributes, and the relationships among them before implementation, producing the ER diagrams that map a domain to a schema." },
+    { "id": "databases.relationship-cardinality", "label": "Relationship Cardinality", "subdomain": "data-modeling", "importance": 2, "desc": "Modeling 1:1, 1:N, and N:M associations correctly in the schema, choosing where foreign keys live and when a junction table is required to represent many-to-many links." },
+    { "id": "databases.migrations", "label": "Schema Migrations & Versioning", "subdomain": "data-modeling", "importance": 3, "desc": "Versioning the schema as code through ordered, reviewable up/down migrations run by tools like Flyway, Liquibase, Alembic, or Prisma Migrate, enabling reproducible environments and zero-downtime deploys." },
+    { "id": "databases.seeding", "label": "Seeding & Fixtures", "subdomain": "data-modeling", "importance": 1, "desc": "Populating a database with baseline reference data or realistic sample records via seed scripts and fixtures, so development, testing, and demos start from a known state." },
+    { "id": "databases.soft-deletes", "label": "Soft Deletes", "subdomain": "data-modeling", "importance": 1, "desc": "Marking rows deleted with a deleted_at timestamp or flag instead of removing them, preserving history and references at the cost of filtering every query and growing tables." },
+
+    { "id": "databases.cache-aside", "label": "Cache-Aside", "subdomain": "caching", "importance": 3, "desc": "The lazy-loading pattern where the app checks the cache first, falls back to the database on a miss, and then populates the cache, the most common application caching strategy." },
+    { "id": "databases.write-strategies", "label": "Write-Through & Write-Back", "subdomain": "caching", "importance": 1, "desc": "Write-time caching policies: write-through updates cache and database together for consistency, while write-back (write-behind) buffers writes in cache and flushes later for speed." },
+    { "id": "databases.redis-memcached", "label": "Redis & Memcached", "subdomain": "caching", "importance": 3, "desc": "The dominant in-memory data stores used as caches: Redis with rich data structures, persistence, and pub/sub, and the simpler, purely volatile Memcached for raw key-value speed." },
+    { "id": "databases.cache-invalidation", "label": "Cache Invalidation", "subdomain": "caching", "importance": 3, "desc": "The notoriously hard problem of keeping cached data fresh by evicting or updating stale entries on writes, including key-based versioning and the risk of serving outdated reads." },
+    { "id": "databases.ttl-eviction", "label": "TTL & Eviction Policies", "subdomain": "caching", "importance": 2, "desc": "Bounding cache contents with time-to-live expiry and eviction policies like LRU and LFU when memory fills, the levers that trade freshness and hit rate against memory use." },
+    { "id": "databases.query-result-caching", "label": "Query & Result Caching", "subdomain": "caching", "importance": 2, "desc": "Caching the results of expensive queries or computed objects keyed by their inputs to skip repeated database work, with stampede protection to avoid thundering-herd recomputation." },
+    { "id": "databases.session-storage", "label": "Session Storage", "subdomain": "caching", "importance": 2, "desc": "Keeping user session state in a fast shared store like Redis rather than server memory, enabling horizontal scaling where any stateless app instance can serve any request." },
+
+    { "id": "databases.full-text-search", "label": "Full-Text Search", "subdomain": "search-storage", "importance": 2, "desc": "Searching natural-language text by relevance using inverted indexes, tokenization, stemming, and ranking, far beyond SQL LIKE, whether via Postgres tsvector or a dedicated engine." },
+    { "id": "databases.elasticsearch", "label": "Elasticsearch & OpenSearch", "subdomain": "search-storage", "importance": 2, "desc": "The distributed search and analytics engines built on Apache Lucene that power full-text search, faceting, and log analytics at scale, queried through a rich JSON DSL." },
+    { "id": "databases.meilisearch", "label": "Meilisearch & Algolia", "subdomain": "search-storage", "importance": 1, "desc": "Lightweight, developer-friendly search built for instant typo-tolerant as-you-type results, with self-hosted Meilisearch or Typesense and the hosted Algolia service for app search bars." },
+    { "id": "databases.db-vs-search", "label": "Database vs Search Separation", "subdomain": "search-storage", "importance": 2, "desc": "Treating the database as the source of truth and a search engine as a derived, denormalized index kept in sync, choosing where queries belong rather than overloading one system." },
+    { "id": "databases.object-storage", "label": "Object Storage", "subdomain": "search-storage", "importance": 3, "desc": "Scalable blob storage for files and media via an HTTP API, led by Amazon S3 and its compatible alternatives (MinIO, Cloudflare R2, GCS), the standard place for unstructured data." },
+    { "id": "databases.file-storage-patterns", "label": "File Storage & CDN", "subdomain": "search-storage", "importance": 2, "desc": "Storing file metadata in the database while bytes live in object storage, using presigned URLs for direct client uploads and a CDN to serve media from edge caches near users (CDN depth covered elsewhere)." }
+  ],
+  "edges": [
+    { "source": "databases.relational-model", "target": "databases.tables-rows-columns", "type": "prereq" },
+    { "source": "databases.tables-rows-columns", "target": "databases.primary-foreign-keys", "type": "prereq" },
+    { "source": "databases.primary-foreign-keys", "target": "databases.relationships", "type": "prereq" },
+    { "source": "databases.relational-model", "target": "databases.normalization", "type": "prereq" },
+    { "source": "databases.relationships", "target": "databases.normalization", "type": "related" },
+    { "source": "databases.relational-model", "target": "databases.postgresql", "type": "related" },
+    { "source": "databases.relational-model", "target": "databases.mysql-mariadb", "type": "related" },
+    { "source": "databases.relational-model", "target": "databases.sqlite", "type": "related" },
+    { "source": "databases.postgresql", "target": "databases.mysql-mariadb", "type": "related" },
+    { "source": "databases.tables-rows-columns", "target": "databases.sql-language", "type": "prereq" },
+
+    { "source": "databases.sql-language", "target": "databases.select-crud", "type": "prereq" },
+
+    { "source": "databases.relationships", "target": "databases.joins", "type": "prereq" },
+
+    { "source": "databases.select-crud", "target": "databases.joins", "type": "prereq" },
+    { "source": "databases.select-crud", "target": "databases.group-by-aggregation", "type": "prereq" },
+    { "source": "databases.select-crud", "target": "databases.subqueries-ctes", "type": "prereq" },
+    { "source": "databases.joins", "target": "databases.subqueries-ctes", "type": "related" },
+    { "source": "databases.select-crud", "target": "databases.views", "type": "prereq" },
+    { "source": "databases.group-by-aggregation", "target": "databases.window-functions", "type": "prereq" },
+    { "source": "databases.subqueries-ctes", "target": "databases.window-functions", "type": "related" },
+
+    { "source": "databases.primary-foreign-keys", "target": "databases.indexes", "type": "related" },
+
+    { "source": "databases.select-crud", "target": "databases.indexes", "type": "related" },
+    { "source": "databases.joins", "target": "databases.indexes", "type": "related" },
+
+    { "source": "databases.acid", "target": "databases.transactions", "type": "prereq" },
+    { "source": "databases.transactions", "target": "databases.isolation-levels", "type": "prereq" },
+    { "source": "databases.isolation-levels", "target": "databases.locking", "type": "related" },
+    { "source": "databases.transactions", "target": "databases.locking", "type": "related" },
+
+    { "source": "databases.primary-foreign-keys", "target": "databases.referential-integrity", "type": "prereq" },
+
+    { "source": "databases.constraints", "target": "databases.referential-integrity", "type": "related" },
+
+    { "source": "databases.tables-rows-columns", "target": "databases.constraints", "type": "prereq" },
+
+    { "source": "databases.acid", "target": "databases.constraints", "type": "related" },
+    { "source": "databases.transactions", "target": "databases.postgresql", "type": "related" },
+    { "source": "databases.isolation-levels", "target": "databases.mysql-mariadb", "type": "related" },
+
+    { "source": "databases.select-crud", "target": "databases.transactions", "type": "related" },
+
+    { "source": "databases.relational-model", "target": "databases.nosql-overview", "type": "related" },
+
+    { "source": "databases.nosql-overview", "target": "databases.document-stores", "type": "prereq" },
+    { "source": "databases.nosql-overview", "target": "databases.key-value-stores", "type": "prereq" },
+    { "source": "databases.nosql-overview", "target": "databases.wide-column", "type": "prereq" },
+    { "source": "databases.nosql-overview", "target": "databases.graph-databases", "type": "prereq" },
+
+    { "source": "databases.acid", "target": "databases.base-eventual-consistency", "type": "related" },
+
+    { "source": "databases.nosql-overview", "target": "databases.base-eventual-consistency", "type": "prereq" },
+    { "source": "databases.wide-column", "target": "databases.base-eventual-consistency", "type": "related" },
+
+    { "source": "databases.relationships", "target": "databases.graph-databases", "type": "related" },
+
+    { "source": "databases.document-stores", "target": "databases.base-eventual-consistency", "type": "related" },
+
+    { "source": "databases.sql-language", "target": "databases.orm-concept", "type": "prereq" },
+
+    { "source": "databases.tables-rows-columns", "target": "databases.orm-concept", "type": "prereq" },
+
+    { "source": "databases.orm-concept", "target": "databases.js-orms", "type": "prereq" },
+    { "source": "databases.orm-concept", "target": "databases.other-orms", "type": "prereq" },
+    { "source": "databases.orm-concept", "target": "databases.query-builders", "type": "related" },
+    { "source": "databases.orm-concept", "target": "databases.raw-sql-vs-orm", "type": "prereq" },
+
+    { "source": "databases.sql-language", "target": "databases.raw-sql-vs-orm", "type": "related" },
+    { "source": "databases.joins", "target": "databases.n-plus-one", "type": "related" },
+
+    { "source": "databases.orm-concept", "target": "databases.n-plus-one", "type": "prereq" },
+    { "source": "databases.js-orms", "target": "databases.n-plus-one", "type": "related" },
+
+    { "source": "databases.normalization", "target": "databases.schema-design", "type": "prereq" },
+
+    { "source": "databases.constraints", "target": "databases.schema-design", "type": "related" },
+
+    { "source": "databases.schema-design", "target": "databases.er-modeling", "type": "related" },
+
+    { "source": "databases.relationships", "target": "databases.relationship-cardinality", "type": "prereq" },
+
+    { "source": "databases.schema-design", "target": "databases.relationship-cardinality", "type": "related" },
+    { "source": "databases.er-modeling", "target": "databases.relationship-cardinality", "type": "related" },
+    { "source": "databases.schema-design", "target": "databases.migrations", "type": "prereq" },
+    { "source": "databases.migrations", "target": "databases.seeding", "type": "related" },
+    { "source": "databases.schema-design", "target": "databases.soft-deletes", "type": "related" },
+    { "source": "databases.relationship-cardinality", "target": "databases.migrations", "type": "related" },
+
+    { "source": "databases.redis-memcached", "target": "databases.cache-aside", "type": "prereq" },
+    { "source": "databases.cache-aside", "target": "databases.write-strategies", "type": "related" },
+
+    { "source": "databases.key-value-stores", "target": "databases.redis-memcached", "type": "prereq" },
+
+    { "source": "databases.cache-aside", "target": "databases.cache-invalidation", "type": "prereq" },
+    { "source": "databases.write-strategies", "target": "databases.cache-invalidation", "type": "related" },
+    { "source": "databases.cache-invalidation", "target": "databases.ttl-eviction", "type": "related" },
+    { "source": "databases.redis-memcached", "target": "databases.ttl-eviction", "type": "related" },
+    { "source": "databases.cache-aside", "target": "databases.query-result-caching", "type": "prereq" },
+
+    { "source": "databases.indexes", "target": "databases.query-result-caching", "type": "related" },
+
+    { "source": "databases.redis-memcached", "target": "databases.session-storage", "type": "prereq" },
+    { "source": "databases.ttl-eviction", "target": "databases.session-storage", "type": "related" },
+
+    { "source": "databases.indexes", "target": "databases.full-text-search", "type": "related" },
+    { "source": "databases.select-crud", "target": "databases.full-text-search", "type": "related" },
+
+    { "source": "databases.full-text-search", "target": "databases.elasticsearch", "type": "prereq" },
+    { "source": "databases.full-text-search", "target": "databases.meilisearch", "type": "related" },
+    { "source": "databases.elasticsearch", "target": "databases.db-vs-search", "type": "related" },
+    { "source": "databases.full-text-search", "target": "databases.db-vs-search", "type": "prereq" },
+
+    { "source": "databases.cache-invalidation", "target": "databases.db-vs-search", "type": "related" },
+
+    { "source": "databases.object-storage", "target": "databases.file-storage-patterns", "type": "prereq" },
+
+    { "source": "databases.schema-design", "target": "databases.file-storage-patterns", "type": "related" },
+
+    { "source": "databases.meilisearch", "target": "databases.db-vs-search", "type": "related" },
+
+    { "source": "databases.nosql-overview", "target": "databases.object-storage", "type": "related" }
+  ]
+}

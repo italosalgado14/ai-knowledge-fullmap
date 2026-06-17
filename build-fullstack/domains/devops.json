@@ -1,0 +1,854 @@
+{
+  "topics": [
+    {
+      "id": "devops.continuous-integration",
+      "label": "Continuous Integration",
+      "subdomain": "ci-cd",
+      "importance": 3,
+      "desc": "The practice of merging code to a shared branch frequently and running automated builds and tests on every push, catching integration failures early via tools like GitHub Actions."
+    },
+    {
+      "id": "devops.continuous-delivery-deployment",
+      "label": "Delivery vs Deployment",
+      "subdomain": "ci-cd",
+      "importance": 3,
+      "desc": "Continuous delivery keeps every change releasable behind a manual approval gate across dev, staging, and prod, while continuous deployment ships every passing commit automatically."
+    },
+    {
+      "id": "devops.pipeline",
+      "label": "CI/CD Pipeline",
+      "subdomain": "ci-cd",
+      "importance": 3,
+      "desc": "An automated sequence of stages and jobs triggered by commits or pull requests that builds, tests, and ships software, defined in YAML for runners like those of CircleCI to execute."
+    },
+    {
+      "id": "devops.build-test-deploy-stages",
+      "label": "Build, Test, Deploy Stages",
+      "subdomain": "ci-cd",
+      "importance": 2,
+      "desc": "The canonical pipeline phases run in order with gates: compile and bundle into versioned artifacts, run unit and integration tests and linters, then promote the result to an environment."
+    },
+    {
+      "id": "devops.deployment-strategies",
+      "label": "Deployment Strategies",
+      "subdomain": "ci-cd",
+      "importance": 3,
+      "desc": "Techniques to ship with minimal risk and downtime, including blue-green swapping two environments, canary releasing to a small subset, and rolling updates batch by batch."
+    },
+    {
+      "id": "devops.github-actions",
+      "label": "GitHub Actions",
+      "subdomain": "ci-cd",
+      "importance": 3,
+      "desc": "GitHub's built-in CI/CD platform that runs YAML-defined workflows on hosted or self-hosted runners, triggered by repository events and composed from reusable marketplace actions."
+    },
+    {
+      "id": "devops.ci-tools",
+      "label": "GitLab CI & Jenkins",
+      "subdomain": "ci-cd",
+      "importance": 2,
+      "desc": "Other major pipeline engines: GitLab's integrated .gitlab-ci.yml runners, and Jenkins, the veteran self-hosted automation server with scriptable Jenkinsfiles and a vast plugin ecosystem."
+    },
+    {
+      "id": "devops.docker",
+      "label": "Docker",
+      "subdomain": "containers",
+      "importance": 3,
+      "desc": "The dominant platform for building and running containers, packaging an app with its dependencies into a portable image that runs identically on any host with a container runtime."
+    },
+    {
+      "id": "devops.containers-vs-vms",
+      "label": "Containers vs VMs",
+      "subdomain": "containers",
+      "importance": 1,
+      "desc": "Containers share the host OS kernel for lightweight, fast-starting process isolation, whereas virtual machines virtualize hardware and run a full guest OS, trading speed for stronger isolation."
+    },
+    {
+      "id": "devops.container-image",
+      "label": "Container Images",
+      "subdomain": "containers",
+      "importance": 3,
+      "desc": "Immutable, layered, tagged filesystem snapshots bundling an app and its runtime, built from a base image and instantiated as running containers across any compatible host."
+    },
+    {
+      "id": "devops.dockerfile",
+      "label": "Dockerfile",
+      "subdomain": "containers",
+      "importance": 3,
+      "desc": "A declarative text recipe of instructions like FROM, COPY, RUN, and CMD that the Docker engine executes step by step to assemble a reproducible container image."
+    },
+    {
+      "id": "devops.image-optimization",
+      "label": "Layers & Multi-Stage Builds",
+      "subdomain": "containers",
+      "importance": 1,
+      "desc": "Each Dockerfile instruction is a cached layer, so ordering steps by volatility speeds rebuilds, while multi-stage builds compile in a heavy image then copy artifacts into a slim one."
+    },
+    {
+      "id": "devops.docker-compose",
+      "label": "Docker Compose",
+      "subdomain": "containers",
+      "importance": 2,
+      "desc": "A tool that defines and runs multi-container applications from a single YAML file, wiring services, networks, and volumes together for local development and simple deployments."
+    },
+    {
+      "id": "devops.container-registry",
+      "label": "Container Registries",
+      "subdomain": "containers",
+      "importance": 2,
+      "desc": "Repositories that store and distribute tagged container images, such as Docker Hub, GitHub Container Registry (GHCR), and cloud registries like Amazon ECR for CI/CD to pull and push."
+    },
+    {
+      "id": "devops.container-orchestration",
+      "label": "Container Orchestration",
+      "subdomain": "orchestration",
+      "importance": 2,
+      "desc": "Automating the deployment, scheduling, networking, scaling, and self-healing of many containers across a cluster of machines, the problem Kubernetes and Docker Swarm solve."
+    },
+    {
+      "id": "devops.kubernetes",
+      "label": "Kubernetes",
+      "subdomain": "orchestration",
+      "importance": 3,
+      "desc": "The de facto container orchestrator that runs declarative workloads across a cluster, reconciling desired state through a control plane and scheduling containers onto worker nodes."
+    },
+    {
+      "id": "devops.k8s-pods",
+      "label": "Pods",
+      "subdomain": "orchestration",
+      "importance": 2,
+      "desc": "Kubernetes' smallest deployable unit: one or more tightly coupled containers sharing a network namespace and storage, scheduled together and treated as a single ephemeral instance."
+    },
+    {
+      "id": "devops.k8s-deployments",
+      "label": "Deployments & Probes",
+      "subdomain": "orchestration",
+      "importance": 2,
+      "desc": "Controllers that keep a desired number of pod replicas running and roll out new versions gradually, using liveness and readiness probes to restart or hold traffic from unhealthy pods."
+    },
+    {
+      "id": "devops.k8s-services-ingress",
+      "label": "Services & Ingress",
+      "subdomain": "orchestration",
+      "importance": 1,
+      "desc": "Kubernetes networking: Services give a stable virtual IP and DNS to a changing set of pods, while Ingress routes external HTTP/HTTPS traffic to them by host and path with TLS."
+    },
+    {
+      "id": "devops.autoscaling",
+      "label": "Autoscaling",
+      "subdomain": "orchestration",
+      "importance": 3,
+      "desc": "Automatically adjusting capacity to match load, scaling pod replicas horizontally on CPU or custom metrics, adjusting resource limits vertically, or adding cluster nodes on demand."
+    },
+    {
+      "id": "devops.managed-kubernetes",
+      "label": "Managed Kubernetes",
+      "subdomain": "orchestration",
+      "importance": 1,
+      "desc": "Cloud-operated Kubernetes control planes like Amazon EKS, Google GKE, and Azure AKS that remove the burden of running masters, etcd, and upgrades yourself."
+    },
+    {
+      "id": "devops.paas",
+      "label": "Platform as a Service",
+      "subdomain": "hosting",
+      "importance": 3,
+      "desc": "A hosting model where the provider manages servers, runtime, and scaling so you just push code or a container, trading fine-grained control for speed and low operational overhead."
+    },
+    {
+      "id": "devops.vercel",
+      "label": "Vercel",
+      "subdomain": "hosting",
+      "importance": 3,
+      "desc": "A frontend cloud optimized for Next.js and static sites, offering Git-driven deploys, instant preview URLs per pull request, edge functions, and a global CDN out of the box."
+    },
+    {
+      "id": "devops.netlify",
+      "label": "Netlify",
+      "subdomain": "hosting",
+      "importance": 2,
+      "desc": "A platform for static sites and Jamstack apps with Git-based continuous deployment, deploy previews, serverless functions, forms, and edge handlers on a built-in CDN."
+    },
+    {
+      "id": "devops.app-platforms",
+      "label": "Heroku, Render & Fly",
+      "subdomain": "hosting",
+      "importance": 1,
+      "desc": "General-purpose PaaS options deploying services, databases, and containers from a repo or Dockerfile: Heroku pioneered the model, Render and Railway modernized it, and Fly.io runs near users."
+    },
+    {
+      "id": "devops.vps",
+      "label": "VPS Hosting",
+      "subdomain": "hosting",
+      "importance": 2,
+      "desc": "A rented virtual private server with root access and a full Linux OS, from providers like DigitalOcean, Linode, or Hetzner, giving control at the cost of self-managing everything."
+    },
+    {
+      "id": "devops.static-hosting",
+      "label": "Static Hosting",
+      "subdomain": "hosting",
+      "importance": 2,
+      "desc": "Serving prebuilt HTML, CSS, and JS files directly from a CDN or object storage with no server runtime, via GitHub Pages, Cloudflare Pages, or Amazon S3 plus CloudFront."
+    },
+    {
+      "id": "devops.choosing-a-host",
+      "label": "Choosing a Host",
+      "subdomain": "hosting",
+      "importance": 1,
+      "desc": "Weighing control, cost, scaling, region coverage, and operational effort to pick between static hosting, PaaS, a VPS, serverless, or full cloud for a given workload."
+    },
+    {
+      "id": "devops.cloud-providers",
+      "label": "Cloud Providers",
+      "subdomain": "cloud",
+      "importance": 3,
+      "desc": "The hyperscalers offering on-demand infrastructure and managed services over the internet, led by Amazon Web Services (AWS), Google Cloud Platform, and Microsoft Azure."
+    },
+    {
+      "id": "devops.cloud-compute",
+      "label": "Cloud Compute",
+      "subdomain": "cloud",
+      "importance": 3,
+      "desc": "Rentable virtual machines and instance types that form the elastic backbone of the cloud, such as AWS EC2, Google Compute Engine, and Azure Virtual Machines."
+    },
+    {
+      "id": "devops.cloud-storage",
+      "label": "Object Storage",
+      "subdomain": "cloud",
+      "importance": 2,
+      "desc": "Massively scalable, durable storage for files and blobs accessed over HTTP, like AWS S3, Google Cloud Storage, and Azure Blob, the standard home for assets and backups."
+    },
+    {
+      "id": "devops.managed-databases",
+      "label": "Managed Databases",
+      "subdomain": "cloud",
+      "importance": 3,
+      "desc": "Provider-operated database services that handle backups, patching, replication, and failover, such as AWS RDS, Aurora, and DynamoDB, removing most database administration toil."
+    },
+    {
+      "id": "devops.regions-az",
+      "label": "Regions & Zones",
+      "subdomain": "cloud",
+      "importance": 2,
+      "desc": "Geographic regions each containing multiple isolated availability zones, the foundation for placing resources near users and architecting for fault tolerance and low latency."
+    },
+    {
+      "id": "devops.iam",
+      "label": "Identity & Access (IAM)",
+      "subdomain": "cloud",
+      "importance": 1,
+      "desc": "The cloud permission system of users, roles, and policies enforcing least-privilege access to resources, with AWS IAM as the canonical model for who can do what."
+    },
+    {
+      "id": "devops.serverless-functions",
+      "label": "Serverless Functions",
+      "subdomain": "serverless",
+      "importance": 3,
+      "desc": "Event-driven FaaS code that runs on demand without managing servers, billed per invocation and auto-scaling to zero, exemplified by AWS Lambda and Google Cloud Functions."
+    },
+    {
+      "id": "devops.edge-functions",
+      "label": "Edge Functions",
+      "subdomain": "serverless",
+      "importance": 1,
+      "desc": "Serverless code that runs at CDN points of presence close to users for ultra-low latency, on platforms like Cloudflare Workers, Vercel Edge Functions, and Deno Deploy."
+    },
+    {
+      "id": "devops.baas",
+      "label": "Backend as a Service",
+      "subdomain": "serverless",
+      "importance": 2,
+      "desc": "Ready-made backends bundling database, authentication, storage, and APIs so frontends can ship without custom servers, via Firebase, Supabase, and Appwrite."
+    },
+    {
+      "id": "devops.firebase",
+      "label": "Firebase",
+      "subdomain": "serverless",
+      "importance": 2,
+      "desc": "Google's BaaS providing realtime and document databases, authentication, hosting, and cloud functions, popular for quickly building mobile and web app backends."
+    },
+    {
+      "id": "devops.supabase",
+      "label": "Supabase",
+      "subdomain": "serverless",
+      "importance": 1,
+      "desc": "An open-source Firebase alternative built on PostgreSQL, offering an instant REST and realtime API, authentication, storage, and edge functions over a relational database."
+    },
+    {
+      "id": "devops.nginx",
+      "label": "Nginx",
+      "subdomain": "web-servers",
+      "importance": 3,
+      "desc": "A high-performance, event-driven web server, used as a reverse proxy, load balancer, and static file server, that with the older process-based Apache handles most web traffic."
+    },
+    {
+      "id": "devops.reverse-proxy",
+      "label": "Reverse Proxy",
+      "subdomain": "web-servers",
+      "importance": 3,
+      "desc": "A server sitting in front of backend apps that forwards client requests to them, centralizing TLS termination, routing, caching, and load balancing while hiding internal topology."
+    },
+    {
+      "id": "devops.load-balancer",
+      "label": "Load Balancers",
+      "subdomain": "web-servers",
+      "importance": 3,
+      "desc": "A component that distributes incoming traffic across multiple server instances for scale and redundancy, using algorithms like round-robin and health checks, at layer 4 or layer 7."
+    },
+    {
+      "id": "devops.tls-termination",
+      "label": "SSL/TLS Termination",
+      "subdomain": "web-servers",
+      "importance": 2,
+      "desc": "Decrypting inbound HTTPS at a reverse proxy or load balancer so backends handle plain HTTP, centralizing certificate management and offloading cryptographic work from app servers."
+    },
+    {
+      "id": "devops.lets-encrypt",
+      "label": "Let's Encrypt & Certbot",
+      "subdomain": "web-servers",
+      "importance": 1,
+      "desc": "A free, automated certificate authority and the Certbot client that issue and auto-renew TLS certificates via the ACME protocol, making HTTPS the default for any site."
+    },
+    {
+      "id": "devops.dns-for-deploys",
+      "label": "DNS for Deploys",
+      "subdomain": "web-servers",
+      "importance": 1,
+      "desc": "Pointing a domain at your infrastructure using A, AAAA, and CNAME records and managing TTLs and propagation to cut over traffic during deployments without downtime."
+    },
+    {
+      "id": "devops.ports-firewalls",
+      "label": "Ports & Firewalls",
+      "subdomain": "web-servers",
+      "importance": 1,
+      "desc": "Controlling which network ports a host exposes and filtering inbound and outbound traffic with firewalls, security groups, and tools like ufw or iptables to limit attack surface."
+    },
+    {
+      "id": "devops.iac",
+      "label": "Infrastructure as Code",
+      "subdomain": "infra-config",
+      "importance": 3,
+      "desc": "Defining and provisioning servers, networks, and cloud resources through version-controlled declarative files instead of manual clicks, making infrastructure reproducible and reviewable."
+    },
+    {
+      "id": "devops.terraform",
+      "label": "Terraform",
+      "subdomain": "infra-config",
+      "importance": 3,
+      "desc": "HashiCorp's cloud-agnostic IaC tool that uses declarative HCL and a state file to plan and apply provider-managed resources across AWS, GCP, Azure, and many others."
+    },
+    {
+      "id": "devops.iac-alternatives",
+      "label": "Pulumi & CloudFormation",
+      "subdomain": "infra-config",
+      "importance": 1,
+      "desc": "Other IaC tools: Pulumi defines infrastructure in general-purpose languages like TypeScript and Python, while AWS CloudFormation provisions stacks from native JSON or YAML templates."
+    },
+    {
+      "id": "devops.config-management",
+      "label": "Configuration Management",
+      "subdomain": "infra-config",
+      "importance": 2,
+      "desc": "Automating consistent server setup and software state with agentless tools like Ansible running idempotent YAML playbooks over SSH, plus alternatives like Chef and Puppet."
+    },
+    {
+      "id": "devops.env-config",
+      "label": "Environment Config",
+      "subdomain": "infra-config",
+      "importance": 3,
+      "desc": "Externalizing settings from code into environment variables and config files per environment, following twelve-factor principles so the same build runs in dev, staging, and prod."
+    },
+    {
+      "id": "devops.secrets-management",
+      "label": "Secrets Management",
+      "subdomain": "infra-config",
+      "importance": 3,
+      "desc": "Securely storing and injecting credentials, API keys, and tokens at runtime via vaults and CI/CD secret stores like HashiCorp Vault and GitHub Actions secrets, never in source."
+    },
+    {
+      "id": "devops.immutable-infra",
+      "label": "Immutable Infrastructure",
+      "subdomain": "infra-config",
+      "importance": 1,
+      "desc": "Replacing servers with freshly built images on every change rather than patching them in place, eliminating configuration drift and making rollbacks a redeploy of a prior image."
+    },
+    {
+      "id": "devops.gitops",
+      "label": "GitOps",
+      "subdomain": "infra-config",
+      "importance": 2,
+      "desc": "Managing infrastructure and deployments by treating a Git repository as the single source of truth, with agents like Argo CD or Flux continuously reconciling the cluster to it."
+    }
+  ],
+  "edges": [
+    {
+      "source": "devops.continuous-integration",
+      "target": "devops.pipeline",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.continuous-integration",
+      "target": "devops.continuous-delivery-deployment",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.pipeline",
+      "target": "devops.build-test-deploy-stages",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.pipeline",
+      "target": "devops.continuous-delivery-deployment",
+      "type": "related"
+    },
+    {
+      "source": "devops.continuous-delivery-deployment",
+      "target": "devops.deployment-strategies",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.continuous-integration",
+      "target": "devops.github-actions",
+      "type": "related"
+    },
+    {
+      "source": "devops.pipeline",
+      "target": "devops.github-actions",
+      "type": "related"
+    },
+    {
+      "source": "devops.pipeline",
+      "target": "devops.ci-tools",
+      "type": "related"
+    },
+    {
+      "source": "devops.github-actions",
+      "target": "devops.ci-tools",
+      "type": "related"
+    },
+    {
+      "source": "devops.build-test-deploy-stages",
+      "target": "devops.container-registry",
+      "type": "related"
+    },
+    {
+      "source": "devops.build-test-deploy-stages",
+      "target": "devops.deployment-strategies",
+      "type": "related"
+    },
+    {
+      "source": "devops.containers-vs-vms",
+      "target": "devops.docker",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.docker",
+      "target": "devops.container-image",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.docker",
+      "target": "devops.dockerfile",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.dockerfile",
+      "target": "devops.container-image",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.dockerfile",
+      "target": "devops.image-optimization",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.image-optimization",
+      "target": "devops.container-image",
+      "type": "related"
+    },
+    {
+      "source": "devops.docker",
+      "target": "devops.docker-compose",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.container-image",
+      "target": "devops.container-registry",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.container-image",
+      "target": "devops.immutable-infra",
+      "type": "related"
+    },
+    {
+      "source": "devops.containers-vs-vms",
+      "target": "devops.cloud-compute",
+      "type": "related"
+    },
+    {
+      "source": "devops.docker",
+      "target": "devops.container-orchestration",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.docker-compose",
+      "target": "devops.container-orchestration",
+      "type": "related"
+    },
+    {
+      "source": "devops.container-orchestration",
+      "target": "devops.kubernetes",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.kubernetes",
+      "target": "devops.k8s-pods",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.kubernetes",
+      "target": "devops.k8s-deployments",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.k8s-pods",
+      "target": "devops.k8s-deployments",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.k8s-pods",
+      "target": "devops.k8s-services-ingress",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.k8s-deployments",
+      "target": "devops.autoscaling",
+      "type": "related"
+    },
+    {
+      "source": "devops.kubernetes",
+      "target": "devops.autoscaling",
+      "type": "related"
+    },
+    {
+      "source": "devops.kubernetes",
+      "target": "devops.managed-kubernetes",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.container-registry",
+      "target": "devops.kubernetes",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.k8s-deployments",
+      "target": "devops.deployment-strategies",
+      "type": "related"
+    },
+    {
+      "source": "devops.paas",
+      "target": "devops.vercel",
+      "type": "related"
+    },
+    {
+      "source": "devops.paas",
+      "target": "devops.netlify",
+      "type": "related"
+    },
+    {
+      "source": "devops.paas",
+      "target": "devops.app-platforms",
+      "type": "related"
+    },
+    {
+      "source": "devops.vercel",
+      "target": "devops.netlify",
+      "type": "related"
+    },
+    {
+      "source": "devops.vercel",
+      "target": "devops.static-hosting",
+      "type": "related"
+    },
+    {
+      "source": "devops.netlify",
+      "target": "devops.static-hosting",
+      "type": "related"
+    },
+    {
+      "source": "devops.paas",
+      "target": "devops.choosing-a-host",
+      "type": "related"
+    },
+    {
+      "source": "devops.vps",
+      "target": "devops.choosing-a-host",
+      "type": "related"
+    },
+    {
+      "source": "devops.static-hosting",
+      "target": "devops.choosing-a-host",
+      "type": "related"
+    },
+    {
+      "source": "devops.docker",
+      "target": "devops.app-platforms",
+      "type": "related"
+    },
+    {
+      "source": "devops.vercel",
+      "target": "devops.github-actions",
+      "type": "related"
+    },
+    {
+      "source": "devops.app-platforms",
+      "target": "devops.choosing-a-host",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.cloud-compute",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.cloud-storage",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.managed-databases",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.regions-az",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.iam",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.regions-az",
+      "target": "devops.load-balancer",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-compute",
+      "target": "devops.vps",
+      "type": "related"
+    },
+    {
+      "source": "devops.managed-databases",
+      "target": "devops.regions-az",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.managed-kubernetes",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-compute",
+      "target": "devops.serverless-functions",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-storage",
+      "target": "devops.static-hosting",
+      "type": "related"
+    },
+    {
+      "source": "devops.cloud-providers",
+      "target": "devops.serverless-functions",
+      "type": "related"
+    },
+    {
+      "source": "devops.serverless-functions",
+      "target": "devops.edge-functions",
+      "type": "related"
+    },
+    {
+      "source": "devops.edge-functions",
+      "target": "devops.vercel",
+      "type": "related"
+    },
+    {
+      "source": "devops.serverless-functions",
+      "target": "devops.baas",
+      "type": "related"
+    },
+    {
+      "source": "devops.baas",
+      "target": "devops.firebase",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.baas",
+      "target": "devops.supabase",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.firebase",
+      "target": "devops.supabase",
+      "type": "related"
+    },
+    {
+      "source": "devops.baas",
+      "target": "devops.managed-databases",
+      "type": "related"
+    },
+    {
+      "source": "devops.firebase",
+      "target": "devops.cloud-providers",
+      "type": "related"
+    },
+    {
+      "source": "devops.nginx",
+      "target": "devops.reverse-proxy",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.reverse-proxy",
+      "target": "devops.load-balancer",
+      "type": "related"
+    },
+    {
+      "source": "devops.reverse-proxy",
+      "target": "devops.tls-termination",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.tls-termination",
+      "target": "devops.lets-encrypt",
+      "type": "related"
+    },
+    {
+      "source": "devops.nginx",
+      "target": "devops.load-balancer",
+      "type": "related"
+    },
+    {
+      "source": "devops.load-balancer",
+      "target": "devops.autoscaling",
+      "type": "related"
+    },
+    {
+      "source": "devops.dns-for-deploys",
+      "target": "devops.deployment-strategies",
+      "type": "related"
+    },
+    {
+      "source": "devops.ports-firewalls",
+      "target": "devops.reverse-proxy",
+      "type": "related"
+    },
+    {
+      "source": "devops.ports-firewalls",
+      "target": "devops.vps",
+      "type": "related"
+    },
+    {
+      "source": "devops.k8s-services-ingress",
+      "target": "devops.reverse-proxy",
+      "type": "related"
+    },
+    {
+      "source": "devops.lets-encrypt",
+      "target": "devops.dns-for-deploys",
+      "type": "related"
+    },
+    {
+      "source": "devops.tls-termination",
+      "target": "devops.load-balancer",
+      "type": "related"
+    },
+    {
+      "source": "devops.dns-for-deploys",
+      "target": "devops.static-hosting",
+      "type": "related"
+    },
+    {
+      "source": "devops.iac",
+      "target": "devops.terraform",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.iac",
+      "target": "devops.iac-alternatives",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.terraform",
+      "target": "devops.iac-alternatives",
+      "type": "related"
+    },
+    {
+      "source": "devops.iac-alternatives",
+      "target": "devops.cloud-providers",
+      "type": "related"
+    },
+    {
+      "source": "devops.iac",
+      "target": "devops.config-management",
+      "type": "related"
+    },
+    {
+      "source": "devops.iac",
+      "target": "devops.immutable-infra",
+      "type": "related"
+    },
+    {
+      "source": "devops.env-config",
+      "target": "devops.secrets-management",
+      "type": "prereq"
+    },
+    {
+      "source": "devops.secrets-management",
+      "target": "devops.github-actions",
+      "type": "related"
+    },
+    {
+      "source": "devops.env-config",
+      "target": "devops.continuous-delivery-deployment",
+      "type": "related"
+    },
+    {
+      "source": "devops.iac",
+      "target": "devops.gitops",
+      "type": "related"
+    },
+    {
+      "source": "devops.gitops",
+      "target": "devops.kubernetes",
+      "type": "related"
+    },
+    {
+      "source": "devops.gitops",
+      "target": "devops.continuous-delivery-deployment",
+      "type": "related"
+    },
+    {
+      "source": "devops.terraform",
+      "target": "devops.cloud-providers",
+      "type": "related"
+    },
+    {
+      "source": "devops.config-management",
+      "target": "devops.immutable-infra",
+      "type": "related"
+    },
+    {
+      "source": "devops.secrets-management",
+      "target": "devops.iam",
+      "type": "related"
+    },
+    {
+      "source": "devops.env-config",
+      "target": "devops.docker-compose",
+      "type": "related"
+    }
+  ]
+}
